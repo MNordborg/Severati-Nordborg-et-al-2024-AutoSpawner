@@ -1,0 +1,423 @@
+---
+title: "2022_AutoSpawn_AllSpp_settlement"
+output: html_document
+date: "2023-03-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#For data import and wrangling
+library(readr)
+library(dplyr)
+
+#For model fitting, comparisons & extraction of results
+library(rstan)
+library(brms) 
+require(tidyverse)
+
+#For data visualisation
+library(ggplot2)
+library(scales)
+library(ggpubr)
+```
+
+
+## Background
+Analysis of data sets from experiments comparing the metamorphosis success of coral larvae produced using the novel AutoSpawner system to those produced using traditional, manual fertilisation techniques. The data analysis was primarily performed in two steps:
+    - Bayesian linear regression models fitted for each data set
+    - Comparison of posterior distributions of model medians and 95% credible intervals for the AutoSpawner and Traditional fertilisation methods
+
+Compromised or invalid replicates were identified prior to data import into R, but removal of replicates was performed after import. Please see methods of main paper and the corresponding data sheet for further details. 
+
+The main data sets consist of binomial and count data and the following terms are used throughout:
+    year = year and month experiment was performed
+    species = species assessed
+    origin = where parent colonies originated from
+    endpoint = endpoint assessed
+    factor = fertilisation method used
+        AS = AutoSpawner/dynamic fertilisation
+        M = Manual/traditional/static fertilisation
+    tank = larval culture tank ID
+    tank_rep = culture tank technical replicate ID (1 or 2)
+    settle_date = date settlement was induced
+    assess_date = date assessed
+    settle_time = length of the settlement incubation (h)
+    inducer = settlement inducer added
+    rep = replicate sample
+    suc = number of successes (e.g. attached and metamorphosed larvae) in replicate
+    tot = total number of organisms in replicate at time of assessment
+    partial_meta = number of larvae/recruits where only partial (ie incomplete) metamorphosis was observed (not counted towards suc)
+    attempt_meta = number of larvae where attachment to substrate was completed but no metamorphosis took place
+    prop = proportion of successes out of total tries/larvae in the sample
+    photo = was a photo taken of sample (yes or no)
+    comments = other observations or comments for sample
+    use_in_model = whether sample should be included in statistical analysis (yes or no)
+    reason_for_exclusion = why a sample was excluded from statistical analysis
+
+
+
+Analysis performed by Dr Mikaela Nordborg.
+
+
+## Packages used and installation of latest version of bayesnec
+
+Analysis performed using package brms and it's dependencies in R Version 4.2.2 through RStudio version 2023.03.0-386. The latest version of brms and rstan, including all dependencies, were installed prior to start of analysis (5 March 2023).
+
+
+## Analysis
+
+### Import data, perform data preparation and check data types
+
+Import data, wrangle and do quick initial checks
+```{r}
+data_All_Nov22_meta_raw<- read_csv("2022_AS_AllSpp_meta_data.csv") %>% 
+  data.frame() %>% 
+  dplyr::mutate(species=as.factor(as.character(species)),
+                factor=as.factor(as.character(factor)),
+                tank=as.factor(as.character(tank)),
+                tank_rep=as.factor(as.character(tank_rep)),
+                rep = as.integer(as.character(rep)),
+                suc=as.integer(suc), 
+                tot=as.integer(tot),
+                prop=as.numeric(suc/tot))
+
+
+save(data_All_Nov22_meta_raw, file = "2022_AutoSpawn_AllSpp_data_meta.RData")
+
+#Check that all columns have been assigned the correct data type & that adding 0.1 to raw.x controls worked
+str(data_All_Nov22_meta_raw)
+head(data_All_Nov22_meta_raw)
+tail(data_All_Nov22_meta_raw)
+
+#Remove any replicates that should be excluded from analysis
+data_All_Nov22_meta <- data_All_Nov22_meta_raw %>% 
+  dplyr::filter(use_in_model=="Yes")
+
+#Check that removing replicates to be excluded from analysis worked
+View(data_All_Nov22_meta)
+
+save(data_All_Nov22_meta_raw, data_All_Nov22_meta, file = "2022_AutoSpawn_AllSpp_data_meta.RData")
+```
+
+
+Data exploration
+```{r}
+load("2022_AutoSpawn_AllSpp_data_meta.RData")
+
+
+#Plot to explore the data distribution
+ggplot(data_All_Nov22_meta, aes(x=species, y=prop, fill=factor)) + 
+    geom_boxplot()
+```
+
+### Fit candidate models
+#### Full model
+Model fitting and posterior comparisons
+```{r}
+#Fit linear regression models
+All_meta_brms_fit_int <- brm(suc | trials(tot)  ~ species + factor + tank_rep, data = data_All_Nov22_meta, family = binomial())
+All_meta_brms_fit_int <- add_criterion(All_meta_brms_fit_int, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_meta_brms_fit_int)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (speciesAtenuis, speciesMelephantotus, factorM)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_meta_interaction_checkchains.pdf")
+plot(All_meta_brms_fit_int, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_meta_brms_fit_int)  # shows dens_overlay plot by default
+pp_check(All_meta_brms_fit_int, type = "scatter_avg", ndraws = 100)
+pp_check(All_meta_brms_fit_int, type = "rootogram")
+```
+
+#### Simplified model
+
+Fit model without the culture tank replicate term
+```{r}
+#Fit linear regression models
+All_meta_brms_fit_simple <- brm(suc | trials(tot)  ~ species + factor, data = data_All_Nov22_meta, family = binomial())
+All_meta_brms_fit_simple <- add_criterion(All_meta_brms_fit_simple, c("loo", "waic"))
+```
+
+
+Check model summary
+```{r}
+summary(All_meta_brms_fit_simple)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes
+              Atenuis and Melephantotus have higher metamorphosis success than Aloripes (Intercept)
+              M (larvae fertilised using the manual/traditional method) has lower metamorphosis success than larvae fertilised using the AutoSpawner (A)
+              
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        ->No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie there is evidence that the model is underdispersed)
+        -> No
+
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_meta_simple_checkchains.pdf")
+plot(All_meta_brms_fit_simple, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or autocorrelation?*
+    - No
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_meta_brms_fit_simple)  # shows dens_overlay plot by default
+pp_check(All_meta_brms_fit_simple, type = "scatter_avg", ndraws = 100)
+pp_check(All_meta_brms_fit_simple, type = "rootogram")
+```
+
+
+#### Perform model comparisons
+
+Compare full and simplified models
+```{r}
+loo_compare(All_meta_brms_fit_int, All_meta_brms_fit_simple, criterion = "loo")
+```
+
+*The preferred model will have an elpd_diff of 0.0*
+
+
+### Test for differences between treatment groups/model coefficients
+#### All factors included
+```{r}
+#Perform t-test to check for differences between groups
+All_meta_new_dat_int <- data.frame(expand.grid(list("species"=c("Atenuis", "Dfavus", "Aloripes", "Melephantotus"), "factor"=c("AS", "M"), "tank_rep"=c("1", "2") ,"tot"=1)))
+All_meta_post_preds_int <- posterior_epred(All_meta_brms_fit_int, newdata=All_meta_new_dat_int) %>% 
+  data.frame
+
+colnames(All_meta_post_preds_int) <- paste(All_meta_new_dat_int$species, All_meta_new_dat_int$factor, All_meta_new_dat_int$tank)
+All_meta_new_data_int <-  All_meta_post_preds_int %>% 
+  pivot_longer(everything())
+```
+
+
+Extract the median metamorphosis success using the posterior probability for each treatment
+```{r}
+quantile(All_meta_post_preds_int[,1], c(0.025, 0.5, 0.975)) #AT AS 1
+quantile(All_meta_post_preds_int[,2], c(0.025, 0.5, 0.975)) #DF AS 1
+quantile(All_meta_post_preds_int[,3], c(0.025, 0.5, 0.975)) #AL AS 1
+quantile(All_meta_post_preds_int[,4], c(0.025, 0.5, 0.975)) #ME AS 1
+quantile(All_meta_post_preds_int[,5], c(0.025, 0.5, 0.975)) #AT M 1
+quantile(All_meta_post_preds_int[,6], c(0.025, 0.5, 0.975)) #DF M 1
+quantile(All_meta_post_preds_int[,7], c(0.025, 0.5, 0.975)) #AL M 1
+quantile(All_meta_post_preds_int[,8], c(0.025, 0.5, 0.975)) #ME M 1
+quantile(All_meta_post_preds_int[,9], c(0.025, 0.5, 0.975)) #AT AS 2
+quantile(All_meta_post_preds_int[,10], c(0.025, 0.5, 0.975)) #DF AS 2
+quantile(All_meta_post_preds_int[,11], c(0.025, 0.5, 0.975)) #AL AS 2
+quantile(All_meta_post_preds_int[,12], c(0.025, 0.5, 0.975)) #ME AS 2
+quantile(All_meta_post_preds_int[,13], c(0.025, 0.5, 0.975)) #AT M 2
+quantile(All_meta_post_preds_int[,14], c(0.025, 0.5, 0.975)) #DF M 2
+quantile(All_meta_post_preds_int[,15], c(0.025, 0.5, 0.975)) #AL M 2
+quantile(All_meta_post_preds_int[,16], c(0.025, 0.5, 0.975)) #ME M 2
+```
+
+
+#### Simplified model
+```{r}
+#Create model matrix to predict data from & predict values based ons elected model
+All_meta_new_dat_simple <- data.frame(expand.grid(list("species"=c("Atenuis", "Dfavus", "Aloripes", "Melephantotus"), "factor"=c("AS", "M"),"tot"=1)))
+All_meta_post_preds_simple <- posterior_epred(All_meta_brms_fit_simple, newdata=All_meta_new_dat_simple) %>% 
+  data.frame
+
+#Re-name columns & check that column names make sense
+colnames(All_meta_post_preds_simple) <- paste(All_meta_new_dat_simple$species, All_meta_new_dat_simple$factor)
+head(All_meta_post_preds_simple) 
+
+#Pivot data to enable plotting of density geoms & check that pivot worked
+All_meta_new_data_simple <-  All_meta_post_preds_simple %>% 
+  pivot_longer(everything())
+head(All_meta_new_data_simple)
+```
+
+
+Extract the median metamorphosis success using the posterior probability for each treatment
+```{r}
+quantile(All_meta_post_preds_simple[,1], c(0.025, 0.5, 0.975)) #AT AS
+quantile(All_meta_post_preds_simple[,2], c(0.025, 0.5, 0.975)) #DF AS
+quantile(All_meta_post_preds_simple[,3], c(0.025, 0.5, 0.975)) #AL AS
+quantile(All_meta_post_preds_simple[,4], c(0.025, 0.5, 0.975)) #ME AS
+quantile(All_meta_post_preds_simple[,5], c(0.025, 0.5, 0.975)) #AT M
+quantile(All_meta_post_preds_simple[,6], c(0.025, 0.5, 0.975)) #DF M
+quantile(All_meta_post_preds_simple[,7], c(0.025, 0.5, 0.975)) #AL M
+quantile(All_meta_post_preds_simple[,8], c(0.025, 0.5, 0.975)) #ME M
+```
+
+
+
+### Plot results
+#### Simplified model
+Filter raw data to enable plotting of original data points
+```{r}
+AS_AT_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="AS" & species=="Atenuis")
+AS_AT_meta$name <- "Atenuis AS"
+M_AT_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="M" & species=="Atenuis")
+M_AT_meta$name <- "Atenuis M"
+
+AS_DF_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="AS" & species=="Dfavus")
+AS_DF_meta$name <- "Dfavus AS"
+M_DF_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="M" & species=="Dfavus")
+M_DF_meta$name <- "Dfavus M"
+
+AS_AL_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="AS" & species=="Aloripes")
+AS_AL_meta$name <- "Aloripes AS"
+M_AL_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="M" & species=="Aloripes")
+M_AL_meta$name <- "Aloripes M"
+
+AS_ME_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="AS" & species=="Melephantotus")
+AS_ME_meta$name <- "Melephantotus AS"
+M_ME_meta <- data_All_Nov22_meta %>%
+  dplyr::filter(factor=="M" & species=="Melephantotus")
+M_ME_meta$name <- "Melephantotus M"
+```
+
+
+
+Plot posterior differences
+```{r}
+All_meta_posterior_plot_simple <- ggplot(All_meta_new_data_simple, aes(x=value)) + 
+  geom_density(aes(group=name, colour=name, fill = name), alpha=0.3) +
+  scale_x_continuous(labels = scales::percent, name ="Average metamorphosis success") +
+  scale_y_continuous(name ="Posterior probability density") +
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) +
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="top") +
+  guides(shape=FALSE, alpha = FALSE) +
+  geom_point(data = AS_AT_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_AT_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_DF_meta, aes(x=prop, y=-12, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_DF_meta, aes(x=prop, y=-12, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_AL_meta, aes(x=prop, y=-18, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1.5)) +
+  geom_point(data = M_AL_meta, aes(x=prop, y=-18, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_ME_meta, aes(x=prop, y=-24, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_ME_meta, aes(x=prop, y=-24, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  
+  geom_point(aes(x=0.981, y=0, colour="Atenuis AS")) +
+  geom_point(aes(x=0.976, y=0, colour="Atenuis M")) +
+  geom_point(aes(x=0.583, y=0, colour="Dfavus AS")) +
+  geom_point(aes(x=0.521, y=0, colour="Dfavus M")) +
+  geom_point(aes(x=0.620, y=0, colour="Aloripes AS")) +
+  geom_point(aes(x=0.559, y=0, colour="Aloripes M")) +
+  geom_point(aes(x=0.927, y=0, colour="Melephantotus AS")) +
+  geom_point(aes(x=0.907, y=0, colour="Melephantotus M"))
+
+All_meta_posterior_plot_simple
+```
+
+
+```{r}
+All_meta_new_data_simple[c('species', 'factor')] <- str_split_fixed(All_meta_new_data_simple$name, ' ', 2)
+All_meta_new_data_simple
+```
+
+
+
+```{r}
+All_meta_posterior_plot_simple_facet <- ggplot(All_meta_new_data_simple, aes(x=value)) + 
+  facet_grid(factor(species, levels=c('Atenuis', 'Melephantotus', 'Aloripes', 'Dfavus')) ~ ., scales = "free_y", space = "free_y") +
+  geom_density(aes(group=name, colour=name, fill = name), alpha=0.3) +
+  scale_x_continuous(labels = scales::percent, name ="Average metamorphosis success") +
+  scale_y_continuous(name ="Posterior probability density") +
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) +
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") +
+  geom_point(data = AS_AT_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_AT_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_DF_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_DF_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_AL_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1.5)) +
+  geom_point(data = M_AL_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_ME_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_ME_meta, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  
+  geom_point(aes(x=0.981, y=0, colour="Atenuis AS")) +
+  geom_point(aes(x=0.976, y=0, colour="Atenuis M")) +
+  geom_point(aes(x=0.583, y=0, colour="Dfavus AS")) +
+  geom_point(aes(x=0.521, y=0, colour="Dfavus M")) +
+  geom_point(aes(x=0.620, y=0, colour="Aloripes AS")) +
+  geom_point(aes(x=0.559, y=0, colour="Aloripes M")) +
+  geom_point(aes(x=0.927, y=0, colour="Melephantotus AS")) +
+  geom_point(aes(x=0.907, y=0, colour="Melephantotus M"))
+
+All_meta_posterior_plot_simple_facet
+```
+
+
+```{r}
+pdf("AS_meta_plot_Allspp.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_meta_posterior_plot_simple_facet
+dev.off()
+```
+
+

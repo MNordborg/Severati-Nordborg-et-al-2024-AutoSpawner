@@ -1,0 +1,169 @@
+---
+title: "2022_AutoSpawn_AllSpp_Sperm concentration-turbidity"
+output: html_document
+date: "2023-05-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#For data import and wrangling
+library(readr)
+library(dplyr)
+
+#For model fitting, comparisons & extraction of results
+library(rstan)
+library(brms) 
+require(tidyverse)
+
+#For data visualisation
+library(ggplot2)
+library(scales)
+library(ggpubr)
+```
+
+
+## Background
+Analysis of sperm concentration data sets from experiments comparing the functioning, and fertilisation success, of the novel AutoSpawner system to those obtained using traditional, manual fertilisation techniques. The data was analysed to produce sperm concentration-turbidity correlations for each species investigated and evaluate the homogeneity of sperm concentration in the AutoFertiliser tank at various times during a spawning event.
+
+Compromised or invalid replicates were identified prior to data import into R, but removal of replicates was performed after import. Please see methods of main paper and the corresponding data sheet for further details. 
+
+This data set primarily consists of count and numerical data, the following terms are used throughout:
+    year = year and month experiment was performed
+    species = species assessed
+    origin = where parent colonies originated from
+    endpoint = endpoint assessed
+    factor = fertilisation method used
+        AS = AutoSpawner/dynamic fertilisation
+        M = Manual/traditional/static fertilisation
+    spawn_date = date of spawning
+    sample_time = time sample was collected from AutoFert tank
+    sample_ID = sample name
+    sample_order = order of sample collection
+    sample_location = location in AutoFert tank where sample was collected from (top or bottom)
+    turb = turbidity in AutoFert tank at time of sampling (FNU)
+    CASA_date = date when sample was analysed using CASA
+    CASA_start = start time for CASA analysis
+    caffeine = whether caffeine was added to sample prior to CASA analysis (yes or no)
+    tech_rep = technical replicate for CASA analysis (1-3)
+    CASA_op = CASA operator who analysed the sample
+    DF = dilution factor for sample
+    tech_sperm_conc = the sperm concentration measured for each technical CASA replicate (cells/mL)
+    CoV = percent coefficient of variance for the CASA technical replicates of a sample (%). Samples with CoV >30% excluded from analysis.
+    sperm_conc = average sperm concentration for biological sample (cells/mL)
+    sperm_con_mill = sperm concentration of biological sample (average across CASA technical replicates; million cells/mL)
+    adj_sperm_conc = sperm concentration for biological sample adjusted for the CASA analysis blank (cells/mL)
+    motile_sperm = percentage of observed cells that were motile (%)
+    prog_sperm = percentage of observed motile cells that moved in a progressive manner (%)
+    VAP = Average Path Velocity of motile cells (um/s)
+    VSL = Straight Line Velocity of motile cells (um/s)
+    VCL = Curvilinear Velocity of motile cells (um/s)
+    slide = slide brand and type used for CASA analysis
+    total_cells = total cell counts performed, ideally >200 per mammalian sample according to manufacturer
+    total_frames = number of frames captured during analysis
+    comments = other observations or comments for sample
+    sample_fixed = whether original sample was preserved using fixative prior to CASA analysis (yes or no)
+    fixative = fixative used to preserve sample
+    use_in_model = whether sample should be included in statistical analysis (yes or no)
+    reason_for_exclusion = why a sample was excluded from statistical analysis
+    analysis_comments = comments relating to the CASA analysis not covered elsewhere
+
+
+Analysis performed by Dr Mikaela Nordborg.
+
+
+## Packages used and installation of latest version of bayesnec
+
+Analysis performed using package brms and it's dependencies in R Version 4.2.2 through RStudio version 2023.03.0-386. The latest version of brms and rstan, including all dependencies, were installed prior to start of analysis (5 March 2023).
+
+
+## Analysis
+
+### Import data, perform data preparation and check data types
+
+Import data, wrangle and do quick initial checks
+```{r}
+data_All_2022_ferttank_raw<- read_csv("2022_AS_AllSpp_sperm-turb_data.csv") %>% 
+  data.frame() %>% 
+  dplyr::mutate(species=as.factor(as.character(species)),
+                factor=as.factor(as.character(factor)),
+                sample_location=as.factor(as.character(sample_location)),
+                turb = as.numeric(as.character(turb)),
+                sample_location = as.factor(as.character(sample_location)),
+                sperm_conc =as.numeric(as.character(sperm_conc)),
+                sperm_conc_mill = as.numeric(as.character(sperm_conc_mill)),
+                adj_sperm_conc = as.numeric(as.character(adj_sperm_conc)))
+
+
+save(data_All_2022_ferttank_raw, file = "2022_AutoSpawn_AllSpp_data_fert-tank.RData")
+
+#Check that all columns have been assigned the correct data type & that adding 0.1 to raw.x controls worked
+str(data_All_2022_ferttank_raw)
+head(data_All_2022_ferttank_raw)
+tail(data_All_2022_ferttank_raw)
+
+#Remove any replicates that should be excluded from analysis
+data_AT_2022_ferttank <- data_All_2022_ferttank_raw %>% 
+  dplyr::filter(endpoint=="Sperm concentration curve") %>% 
+  dplyr::filter(spawn_date=="13/11/2022") %>% 
+  dplyr::filter(species=="Atenuis") %>% 
+  dplyr::filter(caffeine!="Yes") %>% 
+  dplyr::filter(sample_order!="1") %>% 
+  dplyr::filter(adj_sperm_conc!="NA")
+
+#Check that removing replicates to be excluded from analysis worked
+View(data_AT_2022_ferttank)
+
+save(data_AT_2022_ferttank, file = "2022_AutoSpawn_AT_data_fert-tank.RData")
+```
+
+
+
+Data exploration
+```{r}
+load("2022_AutoSpawn_AT_data_fert-tank.RData")
+
+
+#Plot to explore the data distribution
+ggplot(data_AT_2022_ferttank, aes(x=sample_time, y=adj_sperm_conc, colour=sample_location, shape=sample_location)) +
+  geom_point() #+
+  #facet_grid(factor(species, levels=c('Atenuis', 'Melephantotus', 'Aloripes', 'Dfavus')) ~ ., scales = "free_y", space = "free_y")
+```
+
+
+
+
+#### Produce graphical comparison for publication
+
+```{r}
+load( "2022_AutoSpawn_AT_data_fert-tank.RData")
+
+
+AT_ferttank_plot <- ggplot() + 
+  scale_x_continuous(name ="Time", breaks = c(66000, 67200, 68400, 69600, 70800, 72000), labels = c('18:20', "18:40", '19:00', "19:20", '19:40', "20:00"), limits = c(65400, 72500)) + # scales::percent,  
+  scale_y_continuous(name ="Sperm concentration (sperm mL-1)", breaks = c(0, 5000000, 10000000, 15000000), labels = c('0', '5000000', '10000000', '15000000')) + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Top" = "steelblue2",
+                                "Bottom" = "gray44")) +
+                                
+  scale_fill_manual(values = c("Top" = "steelblue2",
+                                "Bottom" = "gray44")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+ guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+
+  #Add in raw data points
+  geom_point(data=data_AT_2022_ferttank, aes(x=sample_time, y=adj_sperm_conc, colour=factor(sample_location), shape=factor(sample_location), alpha=0.3))
+  
+  
+AT_ferttank_plot
+```
+
+
+```{r}
+pdf("AS_ferttank_plot_AT_single.pdf", width = 7.69, height = 5.46) #height and width in inches
+AT_ferttank_plot
+dev.off()
+```

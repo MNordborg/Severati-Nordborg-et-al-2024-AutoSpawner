@@ -1,0 +1,341 @@
+---
+title: "2022_AutoSpawn_AllSpp_fertilisation"
+output: html_document
+date: "2023-03-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#For data import and wrangling
+library(readr)
+library(dplyr)
+
+#For model fitting, comparisons & extraction of results
+library(rstan)
+library(brms) 
+require(tidyverse)
+
+#For data visualisation
+library(ggplot2)
+library(scales)
+library(ggpubr)
+```
+
+
+## Background
+Analysis of data sets from experiments comparing the fertilisation success, and resultant quality of coral larvae, from the novel AutoSpawner systems to those obtained using traditional, manual fertilisation techniques. The data analysis was primarily performed in two steps:
+    - Bayesian linear regression models fitted for each data set
+    - Comparison of posterior distributions of model medians and 95% credible intervals for the AutoSpawner and Traditional fertilisation methods
+
+Compromised or invalid replicates were identified prior to data import into R, but removal of replicates was performed after import. Please see methods of main paper and the corresponding data sheet for further details. 
+
+The main data sets consist of binomial and count data and the following terms are used throughout:
+    year = year and month experiment was performed
+    species = species assessed
+    origin = where parent colonies originated from
+    endpoint = endpoint assessed
+    factor = fertilisation method used
+        AS = AutoSpawner/dynamic fertilisation
+        M = Manual/traditional/static fertilisation
+    tank = larval culture tank ID
+    tank_rep = culture tank technical replicate ID (1 or 2)
+    settle_date = date settlement was induced
+    assess_date = date assessed
+    settle_time = length of the settlement incubation (h)
+    inducer = settlement inducer added
+    rep = replicate sample
+    suc = number of successes (e.g. attached and metamorphosed larvae) in replicate
+    unfert = number of unfertilised eggs counted in replicate
+    tot = total number of organisms in replicate at time of assessment
+    prop = proportion of successful fertilisations out of total eggs & embryos in the sample
+    photo = was a photo taken of sample (yes or no)
+    comments = other observations or comments for sample
+    use_in_model = whether sample should be included in statistical analysis (yes or no)
+    reason_for_exclusion = why a sample was excluded from statistical analysis
+
+
+
+Analysis performed by Dr Mikaela Nordborg.
+
+
+## Packages used and installation of latest version of bayesnec
+
+Analysis performed using package brms and it's dependencies in R Version 4.2.2. The latest version of brms and rstan, including all dependencies, were installed prior to start of analysis (5 March 2023).
+
+
+## Analysis
+
+### Import data, perform data preparation and check data types
+
+Import data, wrangle and do quick initial checks
+```{r}
+data_All_2022_fert_raw<- read_csv("2022_AS_AllSpp_fert_data.csv") %>% 
+  data.frame() %>% 
+  dplyr::mutate(species=as.factor(as.character(species)),
+                factor=as.factor(as.character(factor)),
+                rep = as.integer(as.character(rep)),
+                suc=as.integer(suc),
+                unfert=as.integer(unfert),
+                tot=as.integer(suc+unfert),
+                prop=as.numeric(suc/tot))
+
+
+save(data_All_2022_fert_raw, file = "2022_AutoSpawn_AllSpp_fert_data.RData")
+
+#Check that all columns have been assigned the correct data type & that adding 0.1 to raw.x controls worked
+str(data_All_2022_fert_raw)
+head(data_All_2022_fert_raw)
+tail(data_All_2022_fert_raw)
+
+#Remove any replicates that should be excluded from analysis
+data_All_2022_fert <- data_All_2022_fert_raw %>% 
+  dplyr::filter(use_in_model=="Yes")
+
+#Check that removing replicates to be excluded from analysis worked
+View(data_All_2022_fert)
+
+save(data_All_2022_fert_raw, data_All_2022_fert, file = "2022_AutoSpawn_AllSpp_fert_data.RData")
+```
+
+
+Data exploration
+```{r}
+load("2022_AutoSpawn_AllSpp_fert_data.RData")
+
+
+#Plot to explore the data distribution
+ggplot(data_All_2022_fert, aes(x=species, y=prop, fill=factor)) + 
+    geom_boxplot()
+```
+
+### Fit candidate models
+#### Full model
+Model fitting and posterior comparisons
+```{r}
+#Fit linear regression models
+All_fert_brms_fit_int <- brm(suc | trials(tot)  ~ species + factor, data = data_All_2022_fert, family = binomial())
+All_fert_brms_fit_int <- add_criterion(All_fert_brms_fit_int, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_fert_brms_fit_int)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (speciesAtenuis, speciesDfavus, speciesMelephantotus, factorM)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_fert_checkchains.pdf")
+plot(All_fert_brms_fit_int)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_fert_brms_fit_int)  # shows dens_overlay plot by default
+pp_check(All_fert_brms_fit_int, type = "scatter_avg", ndraws = 100)
+pp_check(All_fert_brms_fit_int, type = "rootogram")
+```
+
+
+
+
+### Test for differences between treatment groups/model coefficients
+#### All factors included
+
+```{r}
+#Create model matrix to predict data from & predict values based ons elected model
+All_fert_new_dat_int <- data.frame(expand.grid(list("species"=c("Atenuis", "Dfavus", "Aloripes", "Melephantotus"), "factor"=c("AS", "M"),"tot"=1)))
+All_fert_post_preds_int <- posterior_epred(All_fert_brms_fit_int, newdata=All_fert_new_dat_int) %>% 
+  data.frame
+
+#Re-name columns & check that column names make sense
+colnames(All_fert_post_preds_int) <- paste(All_fert_new_dat_int$species, All_fert_new_dat_int$factor)
+head(All_fert_post_preds_int) 
+
+#Pivot data to enable plotting of density geoms & check that pivot worked
+All_fert_new_data_int <-  All_fert_post_preds_int %>% 
+  pivot_longer(everything())
+head(All_fert_new_data_int)
+```
+
+
+Extract the median metamorphosis success using the posterior probability for each treatment
+```{r}
+quantile(All_fert_post_preds_int[,1], c(0.025, 0.5, 0.975)) #AT AS
+quantile(All_fert_post_preds_int[,2], c(0.025, 0.5, 0.975)) #DF AS
+quantile(All_fert_post_preds_int[,3], c(0.025, 0.5, 0.975)) #AL AS
+quantile(All_fert_post_preds_int[,4], c(0.025, 0.5, 0.975)) #ME AS
+quantile(All_fert_post_preds_int[,5], c(0.025, 0.5, 0.975)) #AT M
+quantile(All_fert_post_preds_int[,6], c(0.025, 0.5, 0.975)) #DF M
+quantile(All_fert_post_preds_int[,7], c(0.025, 0.5, 0.975)) #AL M
+quantile(All_fert_post_preds_int[,8], c(0.025, 0.5, 0.975)) #ME M
+```
+
+
+
+### Plot results
+#### Simplified model
+Filter raw data to enable plotting of original data points
+```{r}
+AS_AT_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="AS" & species=="Atenuis")
+AS_AT_fert$name <- "Atenuis AS"
+M_AT_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="M" & species=="Atenuis")
+M_AT_fert$name <- "Atenuis M"
+
+AS_DF_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="AS" & species=="Dfavus")
+AS_DF_fert$name <- "Dfavus AS"
+M_DF_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="M" & species=="Dfavus")
+M_DF_fert$name <- "Dfavus M"
+
+AS_AL_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="AS" & species=="Aloripes")
+AS_AL_fert$name <- "Aloripes AS"
+M_AL_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="M" & species=="Aloripes")
+M_AL_fert$name <- "Aloripes M"
+
+AS_ME_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="AS" & species=="Melephantotus")
+AS_ME_fert$name <- "Melephantotus AS"
+M_ME_fert <- data_All_2022_fert %>%
+  dplyr::filter(factor=="M" & species=="Melephantotus")
+M_ME_fert$name <- "Melephantotus M"
+```
+
+
+Add in columns for use in plotting
+
+```{r}
+All_fert_new_data_int[c('species', 'factor')] <- str_split_fixed(All_fert_new_data_int$name, ' ', 2)
+All_fert_new_data_int
+```
+
+
+Plot posterior differences
+```{r}
+All_fert_posterior_plot_int <- ggplot(All_fert_new_data_int, aes(x=value)) + 
+  geom_density(aes(group=name, colour=name, fill = name), alpha=0.3) +
+  scale_x_continuous(limits = c(0, 1.05), labels = scales::percent, name ="Average fertilisation success") +
+  scale_y_continuous(name ="Posterior probability density") +
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) +
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="top") +
+  guides(shape=FALSE, alpha = FALSE) +
+
+#Add in raw data points
+  geom_point(data = AS_AT_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_AT_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_DF_fert, aes(x=prop, y=-12, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_DF_fert, aes(x=prop, y=-12, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_AL_fert, aes(x=prop, y=-18, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1.5)) +
+  geom_point(data = M_AL_fert, aes(x=prop, y=-18, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_ME_fert, aes(x=prop, y=-24, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_ME_fert, aes(x=prop, y=-24, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+
+#Add in median fertilisation success  
+  geom_point(aes(x=0.887, y=0, colour="Atenuis AS")) +
+  geom_point(aes(x=0.915, y=0, colour="Atenuis M")) +
+  geom_point(aes(x=0.464, y=0, colour="Dfavus AS")) +
+  geom_point(aes(x=0.542, y=0, colour="Dfavus M")) +
+  geom_point(aes(x=0.937, y=0, colour="Aloripes AS")) +
+  geom_point(aes(x=0.954, y=0, colour="Aloripes M")) +
+  geom_point(aes(x=0.480, y=0, colour="Melephantotus AS")) +
+  geom_point(aes(x=0.558, y=0, colour="Melephantotus M"))
+
+All_fert_posterior_plot_int
+```
+
+
+
+```{r}
+All_fert_posterior_plot_int_facet <- ggplot(All_fert_new_data_int, aes(x=value)) + 
+  facet_grid(factor(species, levels=c('Aloripes','Atenuis', 'Melephantotus',  'Dfavus')) ~ ., scales = "free_y", space = "free_y") +
+  geom_density(aes(group=name, colour=name, fill = name), alpha=0.3) +
+  scale_x_continuous(limits = c(0, 1.05), labels = scales::percent, name ="Average fertilisation success") +
+  scale_y_continuous(name ="Posterior probability density") +
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) +
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Atenuis M"= "steelblue2",
+                                "Dfavus AS" = "gray44",
+                                "Dfavus M"= "gray73",
+                                "Aloripes AS" = "turquoise4",
+                                "Aloripes M"="turquoise2",
+                                "Melephantotus AS" = "seagreen4",
+                                "Melephantotus M"= "seagreen2")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") +
+  
+#Add in raw data points
+  geom_point(data = AS_AT_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_AT_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_DF_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_DF_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_AL_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1.5)) +
+  geom_point(data = M_AL_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+  geom_point(data = AS_ME_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  geom_point(data = M_ME_fert, aes(x=prop, y=-6, colour=factor(name), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1))+
+
+#Add in median fertilisation success 
+  geom_point(aes(x=0.887, y=0, colour="Atenuis AS")) +
+  geom_point(aes(x=0.915, y=0, colour="Atenuis M")) +
+  geom_point(aes(x=0.464, y=0, colour="Dfavus AS")) +
+  geom_point(aes(x=0.542, y=0, colour="Dfavus M")) +
+  geom_point(aes(x=0.937, y=0, colour="Aloripes AS")) +
+  geom_point(aes(x=0.954, y=0, colour="Aloripes M")) +
+  geom_point(aes(x=0.480, y=0, colour="Melephantotus AS")) +
+  geom_point(aes(x=0.558, y=0, colour="Melephantotus M"))
+
+All_fert_posterior_plot_int_facet
+```
+
+
+```{r}
+pdf("AS_fert_plot_Allspp.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_fert_posterior_plot_int_facet
+dev.off()
+```
+
+

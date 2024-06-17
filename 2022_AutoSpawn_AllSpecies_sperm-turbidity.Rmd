@@ -1,0 +1,608 @@
+---
+title: "2022_AutoSpawn_AllSpp_Sperm concentration-turbidity"
+output: html_document
+date: "2023-05-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#For data import and wrangling
+library(readr)
+library(dplyr)
+
+#For model fitting, comparisons & extraction of results
+library(rstan)
+library(brms) 
+require(tidyverse)
+
+#For data visualisation
+library(ggplot2)
+library(scales)
+library(ggpubr)
+```
+
+
+## Background
+Analysis of sperm concentration and turbidity data sets from experiments comparing the functioning, and fertilisation success, of the novel AutoSpawner system to those obtained using traditional, manual fertilisation techniques. The data was analysed to produce sperm concentration-turbidity correlations for each coral species investigated and evaluate the homogeneity of sperm concentration in the AutoFertiliser tank at various times during a spawning event.
+
+Compromised or invalid replicates were identified prior to data import into R, but removal of replicates was performed after import. Please see methods of main paper and the corresponding data sheet for further details. 
+
+This data set primarily consists of count and numerical data, the following terms are used throughout:
+    year = year and month experiment was performed
+    species = species assessed
+    origin = where parent colonies originated from
+    endpoint = endpoint assessed
+    factor = fertilisation method used
+        AS = AutoSpawner/dynamic fertilisation
+        M = Manual/traditional/static fertilisation
+    spawn_date = date of spawning
+    sample_time = time sample was collected from AutoFert tank
+    sample_ID = sample name
+    sample_order = order of sample collection
+    sample_location = location in AutoFert tank where sample was collected from (top or bottom)
+    turb = turbidity in AutoFert tank at time of sampling (FNU)
+    CASA_date = date when sample was analysed using CASA
+    CASA_start = start time for CASA analysis
+    caffeine = whether caffeine was added to sample prior to CASA analysis (yes or no)
+    tech_rep = technical replicate for CASA analysis (1-3)
+    CASA_op = CASA operator who analysed the sample
+    DF = dilution factor for sample
+    tech_sperm_conc = the sperm concentration measured for each technical CASA replicate (cells/mL)
+    CoV = percent coefficient of variance for the CASA technical replicates of a sample (%). Samples with CoV >30% excluded from analysis.
+    sperm_conc = average sperm concentration for biological sample (cells/mL)
+    sperm_con_mill = sperm concentration of biological sample (average across CASA technical replicates; million cells/mL)
+    motile_sperm = percentage of observed cells that were motile (%)
+    prog_sperm = percentage of observed motile cells that moved in a progressive manner (%)
+    VAP = Average Path Velocity of motile cells (um/s)
+    VSL = Straight Line Velocity of motile cells (um/s)
+    VCL = Curvilinear Velocity of motile cells (um/s)
+    slide = slide brand and type used for CASA analysis
+    total_cells = total cell counts performed, ideally >200 per mammalian sample according to manufacturer
+    total_frames = number of frames captured during analysis
+    comments = other observations or comments for sample
+    sample_fixed = whether original sample was preserved using fixative prior to CASA analysis (yes or no)
+    fixative = fixative used to preserve sample
+    use_in_model = whether sample should be included in statistical analysis (yes or no)
+    reason_for_exclusion = why a sample was excluded from statistical analysis
+    analysis_comments = comments relating to the CASA analysis not covered elsewhere
+
+
+Analysis performed by Dr Mikaela Nordborg.
+
+
+## Packages used and installation of latest version of bayesnec
+
+Analysis performed using package brms and it's dependencies in R Version 4.2.2 through RStudio version 2023.03.0-386. The latest version of brms and rstan, including all dependencies, were installed prior to start of analysis (5 March 2023).
+
+
+## Analysis
+
+### Import data, perform data preparation and check data types
+
+Import data, wrangle and do quick initial checks
+```{r}
+data_All_2022_spermturb_raw<- read_csv("2022_AS_AllSpp_sperm-turb_data.csv") %>% 
+  data.frame() %>% 
+  dplyr::mutate(species=as.factor(as.character(species)),
+                factor=as.factor(as.character(factor)),
+                sample_location=as.factor(as.character(sample_location)),
+                sample_time=as.numeric(as.character(sample_time)),
+                turb = as.numeric(as.character(adj_turb)),
+                sample_location = as.factor(as.character(sample_location)),
+                sperm_conc =as.numeric(as.character(sperm_conc)),
+                adj_sperm_conc =as.numeric(as.character(adj_sperm_conc)),
+                sperm_conc_mill =as.numeric(as.character(sperm_conc_mill)),
+                adj_sperm_conc_mill =as.numeric(as.character(adj_sperm_conc_mill)))
+
+
+save(data_All_2022_spermturb_raw, file = "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+
+#Check that all columns have been assigned the correct data type & that adding 0.1 to raw.x controls worked
+str(data_All_2022_spermturb_raw)
+head(data_All_2022_spermturb_raw)
+tail(data_All_2022_spermturb_raw)
+
+#Remove any replicates that should be excluded from analysis
+data_All_2022_spermturb <- data_All_2022_spermturb_raw %>% 
+  dplyr::filter(include_in_model=="Yes") %>% 
+    dplyr::filter(sperm_conc!="NA")
+
+#Check that removing replicates to be excluded from analysis worked
+View(data_All_2022_spermturb)
+
+save(data_All_2022_spermturb_raw, data_All_2022_spermturb, file = "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+```
+
+
+Data exploration
+```{r}
+load("2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+
+
+#Plot to explore the data distribution
+ggplot(data_All_2022_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=species, shape=species)) +
+  geom_point() +
+  facet_grid(factor(species, levels=c('Atenuis', 'Melephantotus', 'Aloripes', 'Dfavus')) ~ ., scales = "free_y", space = "free_y")
+```
+
+
+### Fit candidate models
+
+#### Create filtered data sets
+Filter dataframe per species
+```{r}
+data_AT_2022_spermturb <- data_All_2022_spermturb  %>% 
+  dplyr::filter(species=="Atenuis")
+data_DF_2022_spermturb <- data_All_2022_spermturb  %>% 
+  dplyr::filter(species=="Dfavus")
+data_AL_2022_spermturb <- data_All_2022_spermturb  %>% 
+  dplyr::filter(species=="Aloripes")
+data_ME_2022_spermturb <- data_All_2022_spermturb  %>% 
+  dplyr::filter(species=="Melephantotus")
+
+save(data_All_2022_spermturb_raw, data_All_2022_spermturb, data_AT_2022_spermturb, data_DF_2022_spermturb, data_AL_2022_spermturb, data_ME_2022_spermturb, file = "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+```
+
+##### Acropora tenuis
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_spermturb_brms_fit_AT <- brm(adj_sperm_conc_mill ~ adj_turb, data = data_AT_2022_spermturb, chains = 4, iter = 10000)
+All_spermturb_brms_fit_AT <- add_criterion(All_spermturb_brms_fit_AT, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_spermturb_brms_fit_AT)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (turbidity)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+        
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_spermturb_AT_checkchains.pdf")
+plot(All_spermturb_brms_fit_AT, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_spermturb_brms_fit_AT)  # shows dens_overlay plot by default
+pp_check(All_spermturb_brms_fit_AT, type = "scatter_avg", ndraws = 100)
+pp_check(All_spermturb_brms_fit_AT, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_spermturb_brms_fit_AT)
+```
+
+```{r}
+#coef(All_spermturb_brms_fit_AT)
+fixef(All_spermturb_brms_fit_AT)
+```
+
+
+
+##### Dipsastrea favus
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_spermturb_brms_fit_DF <- brm(adj_sperm_conc_mill ~ adj_turb, data = data_DF_2022_spermturb, chains = 4, iter = 10000)
+All_spermturb_brms_fit_DF <- add_criterion(All_spermturb_brms_fit_DF, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_spermturb_brms_fit_DF)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (turbidity)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for fac-tors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_spermturb_DF_checkchains.pdf")
+plot(All_spermturb_brms_fit_DF, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_spermturb_brms_fit_DF)  # shows dens_overlay plot by default
+pp_check(All_spermturb_brms_fit_DF, type = "scatter_avg", ndraws = 100)
+pp_check(All_spermturb_brms_fit_DF, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_spermturb_brms_fit_DF, ask=FALSE)
+```
+
+```{r}
+#coef(All_spermturb_brms_fit_DF)
+fixef(All_spermturb_brms_fit_DF)
+```
+
+  
+##### Acropora loripes
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_spermturb_brms_fit_AL <- brm(adj_sperm_conc_mill ~ adj_turb, data = data_AL_2022_spermturb, chains = 4, iter = 10000)
+All_spermturb_brms_fit_AL <- add_criterion(All_spermturb_brms_fit_AL, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_spermturb_brms_fit_AL)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (turbidity)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_spermturb_AL_checkchains.pdf")
+plot(All_spermturb_brms_fit_AL, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_spermturb_brms_fit_AL)  # shows dens_overlay plot by default
+pp_check(All_spermturb_brms_fit_AL, type = "scatter_avg", ndraws = 100)
+pp_check(All_spermturb_brms_fit_AL, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_spermturb_brms_fit_AL, ask=FALSE)
+```
+
+```{r}
+#coef(All_spermturb_brms_fit_AL)
+fixef(All_spermturb_brms_fit_AL)
+```
+
+
+
+
+##### Mycedium elephantotus
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_spermturb_brms_fit_ME <- brm(adj_sperm_conc_mill ~ adj_turb, data = data_ME_2022_spermturb, chains = 4, iter = 10000)
+All_spermturb_brms_fit_ME <- add_criterion(All_spermturb_brms_fit_ME, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_spermturb_brms_fit_ME)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (turbidity)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_spermturb_ME_checkchains.pdf")
+plot(All_spermturb_brms_fit_ME, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_spermturb_brms_fit_ME)  # shows dens_overlay plot by default
+#pp_check(All_spermturb_brms_fit_ME, type = "scatter_avg", ndraws = 100)
+pp_check(All_spermturb_brms_fit_ME, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_spermturb_brms_fit_ME, ask=FALSE)
+```
+
+```{r}
+#coef(All_spermturb_brms_fit_ME)
+fixef(All_spermturb_brms_fit_ME)
+```
+
+
+
+
+#### Save fitted models as RData objects
+```{r}
+save(All_spermturb_brms_fit_AT, All_spermturb_brms_fit_DF, All_spermturb_brms_fit_AL, All_spermturb_brms_fit_ME, file = "2022_AutoSpawn_AllSpp_spermturb_modfits.RData")
+```
+
+
+
+
+
+### Extract posterior predictions and test for differences between treatment groups/model coefficients
+```{r}
+load("2022_AutoSpawn_AllSpp_spermturb_modfits.RData")
+
+All_spermturb_post_preds_AT <- conditional_effects(All_spermturb_brms_fit_AT)
+All_spermturb_post_preds_DF <- conditional_effects(All_spermturb_brms_fit_DF)
+All_spermturb_post_preds_AL <- conditional_effects(All_spermturb_brms_fit_AL)
+All_spermturb_post_preds_ME <- conditional_effects(All_spermturb_brms_fit_ME)
+
+save(All_spermturb_post_preds_AT, All_spermturb_post_preds_DF, All_spermturb_post_preds_AL, All_spermturb_post_preds_ME, file = "2022_AutoSpawn_AllSpp_spermturb_PosteriorPredictions.RData")
+
+#check that it worked
+head(c(All_spermturb_post_preds_AT, All_spermturb_post_preds_DF, All_spermturb_post_preds_AL, All_spermturb_post_preds_ME))
+```
+
+
+
+Pull out the relevant dataframe and add an additional column to the posterior prediction for each species
+```{r}
+All_spermturb_post_preds_AT <- All_spermturb_post_preds_AT$`adj_turb`
+All_spermturb_post_preds_AT$species <- as.factor("Atenuis")
+All_spermturb_post_preds_AT$name <- paste(All_spermturb_post_preds_AT$species, "AS")
+head(All_spermturb_post_preds_AT)
+
+All_spermturb_post_preds_DF <- All_spermturb_post_preds_DF$`adj_turb`
+All_spermturb_post_preds_DF$species <- as.factor("Dfavus")
+All_spermturb_post_preds_DF$name <- paste(All_spermturb_post_preds_DF$species, "AS")
+head(All_spermturb_post_preds_DF)
+
+All_spermturb_post_preds_AL <- All_spermturb_post_preds_AL$`adj_turb`
+All_spermturb_post_preds_AL$species <- as.factor("Aloripes")
+All_spermturb_post_preds_AL$name <- paste(All_spermturb_post_preds_AL$species, "AS")
+head(All_spermturb_post_preds_AL)
+
+All_spermturb_post_preds_ME <- All_spermturb_post_preds_ME$`adj_turb`
+All_spermturb_post_preds_ME$species <- as.factor("Melephantotus")
+All_spermturb_post_preds_ME$name <- paste(All_spermturb_post_preds_ME$species, "AS")
+head(All_spermturb_post_preds_ME)
+
+save(All_spermturb_post_preds_AT, All_spermturb_post_preds_DF, All_spermturb_post_preds_AL, All_spermturb_post_preds_ME, file = "2022_AutoSpawn_AllSpp_spermturb_PosteriorPredictions.RData")
+```
+
+Export predictions to excel files
+```{r}
+library(openxlsx)
+write.xlsx(All_spermturb_post_preds_AT, '2022_AutoSpawn_AllSpp_spermturb_AT_predictions.xlsx')
+write.xlsx(All_spermturb_post_preds_DF, '2022_AutoSpawn_AllSpp_spermturb_DF_predictions.xlsx')
+write.xlsx(All_spermturb_post_preds_AL, '2022_AutoSpawn_AllSpp_spermturb_AL_predictions.xlsx')
+write.xlsx(All_spermturb_post_preds_ME, '2022_AutoSpawn_AllSpp_spermturb_ME_predictions.xlsx')
+```
+
+
+
+
+### Plot results
+#### Wrangle raw data points
+Filter raw data to enable plotting of original data points
+```{r}
+AS_AT_spermturb <- data_All_2022_spermturb %>%
+  dplyr::filter(factor=="AS" & species=="Atenuis")
+AS_AT_spermturb$name <- "Atenuis AS"
+
+
+AS_DF_spermturb <- data_All_2022_spermturb %>%
+  dplyr::filter(factor=="AS" & species=="Dfavus")
+AS_DF_spermturb$name <- "Dfavus AS"
+
+
+AS_AL_spermturb <- data_All_2022_spermturb %>%
+  dplyr::filter(factor=="AS" & species=="Aloripes")
+AS_AL_spermturb$name <- "Aloripes AS"
+
+
+AS_ME_spermturb <- data_All_2022_spermturb %>%
+  dplyr::filter(factor=="AS" & species=="Melephantotus")
+AS_ME_spermturb$name <- "Melephantotus AS"
+
+
+
+save(data_All_2022_spermturb_raw, data_All_2022_spermturb, AS_AT_spermturb, AS_DF_spermturb, AS_AL_spermturb, AS_ME_spermturb, file = "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+```
+
+
+
+#### Plot posterior differences
+Combined graph
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_modfits.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_PosteriorPredictions.RData")
+
+All_spermturb_posterior_plot <- ggplot() + 
+  scale_x_continuous(name ="Turbidity (FNU)") + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Sperm concentration (million sperm mL-1)") + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Dfavus AS" = "gray44",
+                                "Aloripes AS" = "turquoise4",
+                                "Melephantotus AS" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Dfavus AS" = "gray44",
+                                "Aloripes AS" = "turquoise4",
+                                "Melephantotus AS" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=none, alpha = none) +
+
+  
+#Add in credible intervals
+  geom_ribbon(data=All_spermturb_post_preds_AT, aes(x=adj_turb, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_spermturb_post_preds_DF, aes(x=adj_turb, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_spermturb_post_preds_AL, aes(x=adj_turb, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_spermturb_post_preds_ME, aes(x=adj_turb, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+  
+#Add in model median
+  geom_line(data=All_spermturb_post_preds_AT, aes(x=adj_turb, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_spermturb_post_preds_DF, aes(x=adj_turb, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_spermturb_post_preds_AL, aes(x=adj_turb, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_spermturb_post_preds_ME, aes(x=adj_turb, y=estimate__, group=name, colour=name)) +
+  
+  
+#Add in raw data points
+  geom_point(data = AS_AT_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_DF_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_AL_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_ME_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=factor(name), shape=factor(species), alpha=0.3)) 
+
+
+All_spermturb_posterior_plot
+```
+
+Faceted graphs
+
+```{r}
+data_All_2022_spermturb$name <- paste(data_All_2022_spermturb$species, "AS")
+All_spermturb_post_preds <- rbind(All_spermturb_post_preds_AT, All_spermturb_post_preds_DF, All_spermturb_post_preds_AL, All_spermturb_post_preds_ME)
+All_spermturb_post_preds$species <- as.factor(All_spermturb_post_preds$species)
+All_spermturb_post_preds$name <- as.factor(All_spermturb_post_preds$name)
+All_spermturb_post_preds$sperm_conc <- as.numeric(All_spermturb_post_preds$estimate__)
+head(All_spermturb_post_preds)
+tail(All_spermturb_post_preds)
+head(data_All_2022_spermturb)
+```
+
+
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_modfits.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_PosteriorPredictions.RData")
+
+All_spermturb_posterior_plot_facet_preds <- ggplot(data=All_spermturb_post_preds, aes(x=adj_turb)) + 
+  scale_x_continuous(name ="Turbidity (FNU)") + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Sperm concentration (sperm mL-1)") + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+
+  
+#Add in credible intervals
+ geom_ribbon(aes(ymin=lower__, ymax=upper__, fill = factor(species), group = factor(species)), alpha=0.3) +
+  
+  #Add in model median
+  geom_line(aes(y=estimate__, colour=factor(species), group = factor(species))) +
+
+  #Add in raw data points
+  #geom_point(data = data_All_2022_spermturb, aes(x=turb, y=sperm_conc, colour=factor(species), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  
+  facet_grid(factor(species, levels=c('Atenuis', 'Aloripes', 'Melephantotus', 'Dfavus')) ~ ., scales = "free_y", space = "free_y")
+
+
+
+All_spermturb_posterior_plot_facet_preds
+```
+
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_sperm-turb.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_modfits.RData")
+load("2022_AutoSpawn_AllSpp_spermturb_PosteriorPredictions.RData")
+
+All_spermturb_posterior_plot_facet_raw <- ggplot(data=All_spermturb_post_preds, aes(x=adj_turb)) + 
+  scale_x_continuous(name ="Turbidity (FNU)") + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Sperm concentration (sperm mL-1)") + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+
+  
+#Add in credible intervals
+ #geom_ribbon(aes(ymin=lower__, ymax=upper__, fill = factor(species), group = factor(species)), alpha=0.3) +
+  
+  #Add in model median
+  #geom_line(aes(y=estimate__, colour=factor(species), group = factor(species))) +
+
+  #Add in raw data points
+  geom_point(data = data_All_2022_spermturb, aes(x=adj_turb, y=adj_sperm_conc_mill, colour=factor(species), shape=factor(species), alpha=0.3)) +
+  
+  facet_grid(factor(species, levels=c('Atenuis', 'Aloripes', 'Melephantotus', 'Dfavus')) ~ ., scales = "free_y", space = "free_y")
+
+
+
+All_spermturb_posterior_plot_facet_raw
+```
+
+
+### Export graphs
+```{r}
+pdf("AS_spermturb_plot_Allspp_facet_preds.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_spermturb_posterior_plot_facet_preds
+dev.off()
+```
+
+```{r}
+pdf("AS_spermturb_plot_Allspp_facet_raw.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_spermturb_posterior_plot_facet_raw
+dev.off()
+```
+
+
+```{r}
+pdf("AS_spermturb_plot_Allspp_single.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_spermturb_posterior_plot
+dev.off()
+```

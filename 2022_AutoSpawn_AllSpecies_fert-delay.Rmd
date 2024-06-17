@@ -1,0 +1,575 @@
+---
+title: "2022_AutoSpawn_AllSpp_Sperm concentration-turbidity"
+output: html_document
+date: "2023-05-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#For data import and wrangling
+library(readr)
+library(dplyr)
+
+#For model fitting, comparisons & extraction of results
+library(rstan)
+library(brms) 
+require(tidyverse)
+
+#For data visualisation
+library(ggplot2)
+library(scales)
+library(ggpubr)
+```
+
+
+## Background
+Analysis of fertilisation delay for gametes used in experiments comparing the functioning, and fertilisation success, of the novel AutoSpawner system to those obtained using traditional, manual fertilisation techniques. 
+
+Compromised or invalid replicates were identified prior to data import into R, but removal of replicates was performed after import. Please see methods of main paper and the corresponding data sheet for further details. 
+
+This data set primarily consists of count and numerical data, the following terms are used throughout:
+    year = year and month experiment was performed
+    species = species assessed
+    origin = where parent colonies originated from
+    factor = fertilisation method used
+        AS = AutoSpawner/dynamic fertilisation
+        M = Manual/traditional/static fertilisation
+    spawn_date = date of spawning
+    sample_ID = sample name
+    spawn_time = time spawning started for the species and spawning night in question
+    sample_time = time that sample was collected from AutoFertiliser tank
+    assess_time = the time assessment of fertilisation success in sample was started
+    assess_method = method used for assessing fertilisation success
+        Manual = assessed manually using a dissecting microscope
+    MPS = minutes post-spawning, the time passed since spawning was first observed for the species and spawning night in question (min)
+    embryos = number of embryos counted in sample
+    eggs = number of unfertilised eggs counted in sample
+    tot = total number of eggs and embryos in sample
+    ratio = fertilisation success ratio (embryos/tot)
+    comments = other observations or comments for sample
+    use_in_model = whether sample should be included in statistical analysis (yes or no)
+    reason_for_exclusion = why a sample was excluded from statistical analysis
+ 
+
+
+Analysis performed by Dr Mikaela Nordborg.
+
+
+## Packages used and installation of latest version of bayesnec
+
+Analysis performed using package brms and it's dependencies in R Version 4.2.2 through RStudio version 2023.03.0-386. The latest version of brms and rstan, including all dependencies, were installed prior to start of analysis (5 March 2023).
+
+
+## Analysis
+
+### Import data, perform data preparation and check data types
+
+Import data, wrangle and do quick initial checks
+```{r}
+data_All_2022_fertdelay_raw<- read_csv("2022_AS_AllSpp_fertdelay_data.csv") %>% 
+  data.frame() %>% 
+  dplyr::mutate(species=as.factor(as.character(species)),
+                factor=as.factor(as.character(factor)),
+                MPS=as.numeric(as.character(MPS)),
+                embryos=as.integer(as.character(embryos)),
+                eggs=as.integer(as.character(eggs)),
+                tot = as.integer(as.character(tot)),
+                ratio = as.numeric(as.character(ratio)))
+
+
+
+save(data_All_2022_fertdelay_raw, file = "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+
+#Check that all columns have been assigned the correct data type & that adding 0.1 to raw.x controls worked
+str(data_All_2022_fertdelay_raw)
+head(data_All_2022_fertdelay_raw)
+tail(data_All_2022_fertdelay_raw)
+
+#Remove any replicates that should be excluded from analysis
+data_All_2022_fertdelay <- data_All_2022_fertdelay_raw %>% 
+  dplyr::filter(include_in_model=="Yes") 
+
+#Check that removing replicates to be excluded from analysis worked
+View(data_All_2022_fertdelay)
+
+save(data_All_2022_fertdelay_raw, data_All_2022_fertdelay, file = "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+```
+
+
+Data exploration
+```{r}
+load("2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+
+
+#Plot to explore the data distribution
+ggplot(data_All_2022_fertdelay, aes(x=MPS, y=ratio, colour=species, shape=species, colour=species)) +
+  geom_point() +
+  facet_grid(factor(species, levels=c('Atenuis', 'Melephantotus', 'Aloripes', 'Dfavus')) ~ ., scales = "free_y", space = "free_y")
+```
+
+
+### Fit candidate models
+
+#### Create filtered data sets
+Filter dataframe per species
+```{r}
+data_AT_2022_fertdelay <- data_All_2022_fertdelay  %>% 
+  dplyr::filter(species=="Atenuis")
+data_DF_2022_fertdelay <- data_All_2022_fertdelay  %>% 
+  dplyr::filter(species=="Dfavus")
+data_AL_2022_fertdelay <- data_All_2022_fertdelay  %>% 
+  dplyr::filter(species=="Aloripes")
+data_ME_2022_fertdelay <- data_All_2022_fertdelay  %>% 
+  dplyr::filter(species=="Melephantotus")
+
+save(data_All_2022_fertdelay_raw, data_All_2022_fertdelay, data_AT_2022_fertdelay, data_DF_2022_fertdelay, data_AL_2022_fertdelay, data_ME_2022_fertdelay, file = "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+```
+
+##### Acropora tenuis
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_fertdelay_brms_fit_AT <- brm(embryos | trials(tot) ~ MPS, data = data_AT_2022_fertdelay, chains = 4, iter = 10000, family = binomial())
+All_fertdelay_brms_fit_AT <- add_criterion(All_fertdelay_brms_fit_AT, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_fertdelay_brms_fit_AT)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (MPS)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+        
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_fertdelay_AT_checkchains.pdf")
+plot(All_fertdelay_brms_fit_AT, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_fertdelay_brms_fit_AT)  # shows dens_overlay plot by default
+pp_check(All_fertdelay_brms_fit_AT, type = "scatter_avg", ndraws = 100)
+pp_check(All_fertdelay_brms_fit_AT, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_fertdelay_brms_fit_AT)
+```
+
+
+
+
+##### Dipsastrea favus
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_fertdelay_brms_fit_DF <- brm(embryos | trials(tot) ~ MPS, data = data_DF_2022_fertdelay, chains = 4, iter = 10000, family = binomial())
+All_fertdelay_brms_fit_DF <- add_criterion(All_fertdelay_brms_fit_DF, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_fertdelay_brms_fit_DF)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> No
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for fac-tors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_fertdelay_DF_checkchains.pdf")
+plot(All_fertdelay_brms_fit_DF, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_fertdelay_brms_fit_DF)  # shows dens_overlay plot by default
+pp_check(All_fertdelay_brms_fit_DF, type = "scatter_avg", ndraws = 100)
+pp_check(All_fertdelay_brms_fit_DF, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_fertdelay_brms_fit_DF, ask=FALSE)
+```
+
+  
+##### Acropora loripes
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_fertdelay_brms_fit_AL <- brm(embryos | trials(tot) ~ MPS, data = data_AL_2022_fertdelay, chains = 4, iter = 10000, family = binomial())
+All_fertdelay_brms_fit_AL <- add_criterion(All_fertdelay_brms_fit_AL, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_fertdelay_brms_fit_AL)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (MPS)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_fertdelay_AL_checkchains.pdf")
+plot(All_fertdelay_brms_fit_AL, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+    
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_fertdelay_brms_fit_AL)  # shows dens_overlay plot by default
+pp_check(All_fertdelay_brms_fit_AL, type = "scatter_avg", ndraws = 100)
+pp_check(All_fertdelay_brms_fit_AL, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_fertdelay_brms_fit_AL, ask=FALSE)
+```
+
+
+
+
+
+##### Mycedium elephantotus
+Model fitting and model fit evaluation
+```{r}
+#Fit linear regression models
+All_fertdelay_brms_fit_ME <- brm(embryos | trials(tot) ~ MPS, data = data_ME_2022_fertdelay, chains = 4, iter = 10000, family = binomial())
+All_fertdelay_brms_fit_ME <- add_criterion(All_fertdelay_brms_fit_ME, c("loo", "waic"))
+```
+
+Check model summary
+```{r}
+summary(All_fertdelay_brms_fit_ME)
+```
+    - Does the 95% CIs of any factor exclude 0? (ie the factor had a significant effect on y)
+        -> Yes (MPS)
+    
+    - Are any Rhat values substantially higher than 1.1? (ie chains did not converge and model needs to be re-run with more iterations)
+        -> No
+    
+    - Are any Rhat values substantially lower than 0.9? (ie the model is underdispersed)
+        -> No
+
+
+Check model chain mixing and posterior distribution for factors
+```{r}
+pdf("2022_AutoSpawn_AllSpp_fertdelay_ME_checkchains.pdf")
+plot(All_fertdelay_brms_fit_ME, ask=FALSE)
+dev.off()
+```
+
+*Any evidence of non-convergence, poor chain mixing or overly influential priors?*
+    - No
+
+Compare the observed posterior to expected values:
+```{r}
+pp_check(All_fertdelay_brms_fit_ME)  # shows dens_overlay plot by default
+#pp_check(All_fertdelay_brms_fit_ME, type = "scatter_avg", ndraws = 100)
+pp_check(All_fertdelay_brms_fit_ME, type = "rootogram")
+```
+
+```{r}
+conditional_effects(All_fertdelay_brms_fit_ME, ask=FALSE)
+```
+
+
+
+
+
+
+#### Save fitted models as RData objects
+```{r}
+save(All_fertdelay_brms_fit_AT, All_fertdelay_brms_fit_DF, All_fertdelay_brms_fit_AL, All_fertdelay_brms_fit_ME, file = "2022_AutoSpawn_AllSpp_fertdelay_modfits.RData")
+```
+
+
+
+
+
+### Extract posterior predictions and test for differences between treatment groups/model coefficients
+```{r}
+load("2022_AutoSpawn_AllSpp_fertdelay_modfits.RData")
+
+All_fertdelay_post_preds_AT <- conditional_effects(All_fertdelay_brms_fit_AT)
+All_fertdelay_post_preds_DF <- conditional_effects(All_fertdelay_brms_fit_DF)
+All_fertdelay_post_preds_AL <- conditional_effects(All_fertdelay_brms_fit_AL)
+All_fertdelay_post_preds_ME <- conditional_effects(All_fertdelay_brms_fit_ME)
+
+save(All_fertdelay_post_preds_AT, All_fertdelay_post_preds_DF, All_fertdelay_post_preds_AL, All_fertdelay_post_preds_ME, file = "2022_AutoSpawn_AllSpp_fertdelay_PosteriorPredictions.RData")
+
+#check that it worked
+head(c(All_fertdelay_post_preds_AT, All_fertdelay_post_preds_DF, All_fertdelay_post_preds_AL, All_fertdelay_post_preds_ME))
+```
+
+
+
+Pull out the relevant dataframe and add an additional column to the posterior prediction for each species
+```{r}
+All_fertdelay_post_preds_AT <- All_fertdelay_post_preds_AT$`MPS`
+All_fertdelay_post_preds_AT$species <- as.factor("Atenuis")
+All_fertdelay_post_preds_AT$name <- paste(All_fertdelay_post_preds_AT$species, "AS")
+head(All_fertdelay_post_preds_AT)
+
+All_fertdelay_post_preds_DF <- All_fertdelay_post_preds_DF$`MPS`
+All_fertdelay_post_preds_DF$species <- as.factor("Dfavus")
+All_fertdelay_post_preds_DF$name <- paste(All_fertdelay_post_preds_DF$species, "AS")
+head(All_fertdelay_post_preds_DF)
+
+All_fertdelay_post_preds_AL <- All_fertdelay_post_preds_AL$`MPS`
+All_fertdelay_post_preds_AL$species <- as.factor("Aloripes")
+All_fertdelay_post_preds_AL$name <- paste(All_fertdelay_post_preds_AL$species, "AS")
+head(All_fertdelay_post_preds_AL)
+
+All_fertdelay_post_preds_ME <- All_fertdelay_post_preds_ME$`MPS`
+All_fertdelay_post_preds_ME$species <- as.factor("Melephantotus")
+All_fertdelay_post_preds_ME$name <- paste(All_fertdelay_post_preds_ME$species, "AS")
+head(All_fertdelay_post_preds_ME)
+
+save(All_fertdelay_post_preds_AT, All_fertdelay_post_preds_DF, All_fertdelay_post_preds_AL, All_fertdelay_post_preds_ME, All_fertdelay_post_preds_AT, All_fertdelay_post_preds_DF, All_fertdelay_post_preds_AL, All_fertdelay_post_preds_ME, file = "2022_AutoSpawn_AllSpp_fertdelay_PosteriorPredictions.RData")
+```
+
+Export predictions to excel files
+```{r}
+library(openxlsx)
+write.xlsx(All_fertdelay_post_preds_AT, '2022_AutoSpawn_AllSpp_fertdelay_AT_predictions.xlsx')
+write.xlsx(All_fertdelay_post_preds_DF, '2022_AutoSpawn_AllSpp_fertdelay_DF_predictions.xlsx')
+write.xlsx(All_fertdelay_post_preds_AL, '2022_AutoSpawn_AllSpp_fertdelay_AL_predictions.xlsx')
+write.xlsx(All_fertdelay_post_preds_ME, '2022_AutoSpawn_AllSpp_fertdelay_ME_predictions.xlsx')
+```
+
+
+
+
+### Plot results
+#### Wrangle raw data points
+Filter raw data to enable plotting of original data points
+```{r}
+AS_AT_fertdelay <- data_All_2022_fertdelay %>%
+  dplyr::filter(factor=="AS" & species=="Atenuis")
+AS_AT_fertdelay$name <- "Atenuis AS"
+
+
+AS_DF_fertdelay <- data_All_2022_fertdelay %>%
+  dplyr::filter(factor=="AS" & species=="Dfavus")
+AS_DF_fertdelay$name <- "Dfavus AS"
+
+
+AS_AL_fertdelay <- data_All_2022_fertdelay %>%
+  dplyr::filter(factor=="AS" & species=="Aloripes")
+AS_AL_fertdelay$name <- "Aloripes AS"
+
+
+AS_ME_fertdelay <- data_All_2022_fertdelay %>%
+  dplyr::filter(factor=="AS" & species=="Melephantotus")
+AS_ME_fertdelay$name <- "Melephantotus AS"
+
+
+
+save(data_All_2022_fertdelay_raw, data_All_2022_fertdelay, AS_AT_fertdelay, AS_DF_fertdelay, AS_AL_fertdelay, AS_ME_fertdelay, file = "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+```
+
+
+
+#### Plot posterior differences
+Combined graph
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_modfits.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_PosteriorPredictions.RData")
+
+All_fertdelay_posterior_plot <- ggplot() + 
+  scale_x_continuous(name ="Time after spawning start (min)") + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Fertilisation success (%)") + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Dfavus AS" = "gray44",
+                                "Aloripes AS" = "turquoise4",
+                                "Melephantotus AS" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis AS" = "steelblue4",
+                                "Dfavus AS" = "gray44",
+                                "Aloripes AS" = "turquoise4",
+                                "Melephantotus AS" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+  
+#Add in credible intervals
+  geom_ribbon(data=All_fertdelay_post_preds_AT, aes(x=MPS, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_fertdelay_post_preds_DF, aes(x=MPS, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_fertdelay_post_preds_AL, aes(x=MPS, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+   geom_ribbon(data=All_fertdelay_post_preds_ME, aes(x=MPS, ymin=lower__, ymax=upper__, fill = name), alpha=0.3) +
+  
+#Add in model median
+  geom_line(data=All_fertdelay_post_preds_AT, aes(x=MPS, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_fertdelay_post_preds_DF, aes(x=MPS, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_fertdelay_post_preds_AL, aes(x=MPS, y=estimate__, group=name, colour=name)) +
+   geom_line(data=All_fertdelay_post_preds_ME, aes(x=MPS, y=estimate__, group=name, colour=name)) +
+  
+  
+#Add in raw data points
+  geom_point(data = AS_AT_fertdelay, aes(x=MPS, y=ratio, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_DF_fertdelay, aes(x=MPS, y=ratio, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_AL_fertdelay, aes(x=MPS, y=ratio, colour=factor(name), shape=factor(species), alpha=0.3)) +
+  geom_point(data = AS_ME_fertdelay, aes(x=MPS, y=ratio, colour=factor(name), shape=factor(species), alpha=0.3)) 
+
+
+All_fertdelay_posterior_plot
+```
+
+Faceted graphs
+
+```{r}
+data_All_2022_fertdelay$name <- paste(data_All_2022_fertdelay$species, "AS")
+All_fertdelay_post_preds <- rbind(All_fertdelay_post_preds_AT, All_fertdelay_post_preds_DF, All_fertdelay_post_preds_AL, All_fertdelay_post_preds_ME)
+All_fertdelay_post_preds$species <- as.factor(All_fertdelay_post_preds$species)
+All_fertdelay_post_preds$name <- as.factor(All_fertdelay_post_preds$name)
+All_fertdelay_post_preds$sperm_conc <- as.numeric(All_fertdelay_post_preds$estimate__)
+head(All_fertdelay_post_preds)
+tail(All_fertdelay_post_preds)
+head(data_All_2022_fertdelay)
+```
+
+
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_modfits.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_PosteriorPredictions.RData")
+
+All_fertdelay_posterior_plot_facet_preds <- ggplot(data=All_fertdelay_post_preds, aes(x=MPS)) + 
+  scale_x_continuous(name ="Time since spawning start (min)") + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Fertilisation success (%)", limits = c(-0.05, 0.9)) + #limits = c(0, 145000)
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+
+  
+#Add in credible intervals
+ geom_ribbon(aes(ymin=lower__, ymax=upper__, fill = factor(species), group = factor(species)), alpha=0.3) +
+  
+  #Add in model median
+  geom_line(aes(y=estimate__, colour=factor(species), group = factor(species))) +
+
+  #Add in raw data points
+  #geom_point(data = data_All_2022_fertdelay, aes(x=turb, y=sperm_conc, colour=factor(species), shape=factor(species), alpha=0.3), position=position_jitter(width=0.005, height=1)) +
+  
+  facet_grid(factor(species, levels=c('Atenuis', 'Aloripes', 'Dfavus', 'Melephantotus')) ~ ., scales = "free_y", space = "free_y")
+
+
+
+All_fertdelay_posterior_plot_facet_preds
+```
+
+```{r}
+load( "2022_AutoSpawn_AllSpp_data_fertdelay.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_modfits.RData")
+load("2022_AutoSpawn_AllSpp_fertdelay_PosteriorPredictions.RData")
+
+All_fertdelay_posterior_plot_facet_raw <- ggplot(data=All_fertdelay_post_preds, aes(x=MPS)) + 
+  scale_x_continuous(name ="Time since spawning start (min)",) + #labels = scales::percent, breaks = c(0, 1, 2, 3, 4, 5, 6)
+  scale_y_continuous(name ="Fertilisation success (%)",limits = c(-0.05, 0.9)) + #limits = c(0, 145000), , labels = scales::percent
+  theme_classic() +
+  scale_color_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) +
+                                
+  scale_fill_manual(values = c("Atenuis" = "steelblue4",
+                                "Dfavus" = "gray44",
+                                "Aloripes" = "turquoise4",
+                                "Melephantotus" = "seagreen4")) + 
+  #labs(x=expression(), 
+   #            subtitle="Comparison of treatments") +
+  theme(legend.position="none") + #"top"
+  guides(scale=TRUE, shape=FALSE, alpha = FALSE) +
+
+
+  
+#Add in credible intervals
+ #geom_ribbon(aes(ymin=lower__, ymax=upper__, fill = factor(species), group = factor(species)), alpha=0.3) +
+  
+  #Add in model median
+  #geom_line(aes(y=estimate__, colour=factor(species), group = factor(species))) +
+
+  #Add in raw data points
+  geom_point(data = data_All_2022_fertdelay, aes(x=MPS, y=ratio, colour=factor(species), shape=factor(species), alpha=0.3)) +
+  
+  facet_grid(factor(species, levels=c('Atenuis', 'Aloripes', 'Dfavus', 'Melephantotus')) ~ ., scales = "free_y", space = "free_y")
+
+
+
+All_fertdelay_posterior_plot_facet_raw
+```
+
+
+
+### Export graphs
+```{r}
+pdf("AS_fertdelay_plot_Allspp_facet_preds.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_fertdelay_posterior_plot_facet_preds
+dev.off()
+```
+
+```{r}
+pdf("AS_fertdelay_plot_Allspp_facet_raw.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_fertdelay_posterior_plot_facet_raw
+dev.off()
+```
+
+
+```{r}
+pdf("AS_fertdelay_plot_Allspp_single.pdf", width = 7.69, height = 5.46) #height and width in inches
+All_fertdelay_posterior_plot
+dev.off()
+```

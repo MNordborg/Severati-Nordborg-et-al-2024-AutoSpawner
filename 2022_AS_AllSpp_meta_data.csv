@@ -1,0 +1,769 @@
+year,species,origin,cult_start,no_parents,endpoint,factor,tank,tank_rep,settle_date,assess_date,settle_time,inducer,rep,suc,tot,partial_meta,attempt_meta,photo,comments,use_in_model,reason_for_exclusion
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,1,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,2,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,3,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,4,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,5,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,6,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,7,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,8,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,9,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,10,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,11,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,12,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,13,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,14,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,15,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,16,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,17,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,18,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,19,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,20,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,21,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,22,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,23,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,FSW,24,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,1,12,12,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,2,13,14,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,3,13,13,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,4,13,13,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,5,16,16,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,6,NA,NA,0,0,No,All have normal morphology & are swimming,No,No larvae added to well
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,7,16,16,0,0,Yes,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,8,13,14,1,0,Yes,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,9,13,13,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,10,14,14,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,11,12,13,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,12,13,14,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,13,13,15,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,14,14,14,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,15,13,14,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,16,12,14,0,2,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,17,14,14,0,0,Yes,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,18,15,15,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,19,15,15,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,20,13,13,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,21,18,18,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,22,15,15,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,23,17,17,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_02,1,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,24,9,9,0,0,No,All have normal morphology & are swimming,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,1,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,2,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,3,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,4,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,5,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,6,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,7,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,8,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,9,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,10,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,11,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,12,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,13,0,14,0,0,No,"1 small, abnormal larva.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,14,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,15,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,16,0,10,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,17,0,15,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,18,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,19,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,20,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,21,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,22,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,23,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,FSW,24,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,1,16,16,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,2,20,20,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,3,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,4,19,19,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,5,13,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,6,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,7,27,27,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,8,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,9,15,15,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,10,15,15,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,11,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,12,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,13,15,15,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,14,15,15,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,15,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,16,12,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,17,11,12,1?,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,18,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,19,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,20,15,16,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,21,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,22,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,23,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,AS,MN_04,2,18/11/2022,19/11/2022,11/01/1900,Porolithon onkodes fairy dust,24,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,1,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,2,0,10,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,3,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,4,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,5,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,6,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,7,0,10,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,8,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,9,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,10,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,11,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,12,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,13,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,14,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,15,0,11,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,16,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,17,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,18,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,19,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,20,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,21,0,14,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,22,0,13,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,23,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,FSW,24,0,12,0,0,No,All have normal morphology & are swimming,No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,1,10,10,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,2,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,3,10,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,4,12,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,5,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,6,10,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,7,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,8,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,9,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,10,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,11,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,12,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,13,12,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,14,15,15,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,15,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,16,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,17,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,18,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,19,10,10,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,20,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,21,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,22,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,23,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_06,1,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,24,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,1,0,11,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,2,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,3,0,16,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,4,0,14,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,5,0,10,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,6,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,7,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,8,0,11,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,9,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,10,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,11,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,12,0,11,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,13,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,14,0,14,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,15,0,14,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,16,0,13,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,17,0,11,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,18,0,13,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,19,0,11,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,20,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,21,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,22,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,23,0,12,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,FSW,24,0,13,0,0,No,"All swimming, may have some more bumps/imperfections than larvae from MN_02 and MN_04.",No,Self-settlement control.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,1,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,2,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,3,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,4,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,5,10,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,6,9,10,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,7,16,16,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,8,13,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,9,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,10,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,11,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,12,13,13,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,13,12,12,0,0,Yes,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,14,11,11,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,15,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,16,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,17,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,18,14,14,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,19,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,20,11,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,21,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,22,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,23,12,12,0,0,No,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Metamorphosis,M,MN_08,2,18/11/2022,19/11/2022,12/01/1900,Porolithon onkodes fairy dust,24,12,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,1,6,13,0,0,Yes,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,2,4,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,3,8,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,4,0,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,5,10,15,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,6,7,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,7,1,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,8,4,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,9,6,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,10,9,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,11,1,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,12,2,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,13,16,23,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,14,10,14,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,15,2,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,16,5,14,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,17,10,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,18,11,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,19,5,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,20,4,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,21,3,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,22,9,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,23,9,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,24,4,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,1,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,2,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,3,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,4,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,5,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,6,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,7,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,8,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,9,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,11,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,12,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,13,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,14,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,15,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,17,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,18,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,19,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,20,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,21,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,22,0,14,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,23,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_05,1,17/12/2022,19/12/2022,48,FSW,24,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,1,7,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,2,10,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,3,11,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,4,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,5,8,9,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,6,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,7,8,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,8,7,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,9,6,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,10,5,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,11,7,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,12,8,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,13,6,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,14,8,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,15,5,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,16,11,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,17,10,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,18,9,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,19,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,20,5,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,21,11,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,22,23,24,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,23,13,15,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,24,20,21,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,2,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,3,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,4,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,6,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,7,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,8,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,9,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,11,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,12,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,13,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,14,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,15,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,16,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,17,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,18,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,19,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,20,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,22,0,23,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,23,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_07,1,17/12/2022,19/12/2022,48,FSW,24,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,1,5,13,0,0,Yes,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,2,4,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,3,8,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,4,6,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,5,8,12,0,0,Yes,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,6,4,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,7,6,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,8,0,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,9,8,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,10,11,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,11,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,12,4,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,13,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,14,0,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,15,13,14,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,16,6,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,17,7,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,18,5,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,19,11,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,20,15,21,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,21,2,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,22,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,23,5,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,24,6,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,2,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,3,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,4,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,6,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,7,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,8,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,9,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,10,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,11,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,12,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,13,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,14,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,15,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,17,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,18,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,19,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,20,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,22,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,23,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,M,MN_08,2,17/12/2022,19/12/2022,48,FSW,24,0,19,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,1,4,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,2,5,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,3,5,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,4,1,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,5,3,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,6,5,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,7,9,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,8,8,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,9,8,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,10,10,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,11,0,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,12,8,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,13,8,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,14,4,14,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,15,9,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,16,6,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,17,2,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,18,7,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,19,3,12,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,20,4,13,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,21,1,10,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,22,3,9,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,23,4,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,Titanoderma tesselatum fairy dust,24,0,11,0,0,No,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,2,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,3,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,4,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,6,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,7,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,8,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,9,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,10,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,11,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,12,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,13,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,14,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,15,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,16,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,17,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,18,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,19,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,20,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,22,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,23,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Metamorphosis,AS,MN_10,2,17/12/2022,19/12/2022,48,FSW,24,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,1,11,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,2,12,12,0,0,Yes,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,3,11,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,4,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,5,12,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,6,10,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,7,11,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,8,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,9,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,10,8,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,11,13,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,12,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,13,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,14,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,15,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,16,7,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,17,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,18,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,19,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,20,8,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,21,10,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,22,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,23,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,24,23,23,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,1,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,2,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,3,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,4,0,20,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,5,0,11,0,0,Yes,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,6,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,7,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,8,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,9,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,10,0,21,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,11,NA,NA,0,0,No,No larvae added.,No,No larvae added to well
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,12,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,13,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,14,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,15,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,16,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,17,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,18,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,19,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,20,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,22,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,23,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_01,2,19/12/2022,20/12/2022,18,FSW,24,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,1,10,10,0,0,Yes,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,2,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,3,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,4,8,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,5,6,7,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,6,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,7,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,8,10,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,9,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,10,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,11,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,12,11,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,13,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,14,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,15,5,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,16,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,17,11,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,18,10,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,19,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,20,7,8,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,21,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,22,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,23,10,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,Rubble pieces from MOS sump,24,14,15,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,2,0,11,0,0,Yes,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,3,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,4,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,5,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,6,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,7,0,14,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,8,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,9,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,11,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,12,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,13,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,14,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,15,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,16,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,17,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,18,0,22,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,19,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,20,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,21,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,22,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,23,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_02,1,19/12/2022,20/12/2022,18,FSW,24,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,1,10,10,0,0,Yes,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,2,10,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,3,10,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,4,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,5,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,6,8,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,7,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,8,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,9,9,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,10,8,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,11,10,11,0,0,No,The larvae that did not settled appeared abnormal.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,12,7,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,13,9,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,14,11,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,15,7,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,16,8,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,17,11,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,18,12,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,19,9,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,20,5,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,21,14,14,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,22,11,14,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,23,13,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,Rubble pieces from MOS sump,24,13,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,2,0,11,0,0,Yes,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,3,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,4,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,6,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,7,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,8,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,9,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,11,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,12,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,13,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,14,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,15,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,17,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,18,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,19,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,20,0,20,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,22,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,23,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,M,MN_03,2,19/12/2022,20/12/2022,17,FSW,24,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,1,11,11,0,0,Yes,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,2,13,14,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,3,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,4,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,5,13,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,6,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,7,12,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,8,0,15,0,0,No,Rubble piece too small?,No,Issue with rubble added as inducer.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,9,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,10,8,8,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,11,11,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,12,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,13,10,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,14,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,15,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,16,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,17,7,9,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,18,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,19,10,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,20,11,12,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,21,9,11,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,22,12,14,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,23,12,13,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,Rubble pieces from MOS sump,24,9,10,0,0,No,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,1,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,2,1,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,3,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,4,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,5,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,6,0,11,0,0,Yes,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,7,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,8,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,9,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,11,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,12,0,14,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,13,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,14,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,15,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,16,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,17,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,18,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,19,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,20,0,14,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,22,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,23,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Metamorphosis,AS,MN_04,1,19/12/2022,20/12/2022,16,FSW,24,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,1,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,2,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,3,0,10,0,0,No,All small larvae.,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,4,0,10,0,0,No,Mostly small/broken larvae.,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,5,0,8,0,0,No,Mostly small/broken larvae.,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,6,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,7,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,8,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,9,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,10,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,11,0,6,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,12,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,13,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,14,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,15,0,7,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,17,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,18,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,19,0,15,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,20,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,21,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,22,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,23,0,6,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,FSW,24,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,1,5,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,2,1,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,3,4,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,4,2,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,5,5,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,6,3,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,7,7,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,8,4,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,9,5,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,10,6,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,11,4,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,12,5,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,13,6,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,14,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,15,3,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,16,9,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,17,8,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,18,0,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,19,6,15,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,20,1,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,21,4,15,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,22,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,23,3,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_06,1,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,24,NA,NA,0,0,No,No larvae added.,No,No larvae added to well
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,1,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,2,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,3,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,4,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,6,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,7,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,8,0,8,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,9,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,10,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,11,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,12,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,13,1,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,14,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,15,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,17,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,18,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,19,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,20,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,21,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,22,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,23,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,FSW,24,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,1,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,2,5,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,3,5,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,4,9,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,5,4,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,6,8,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,7,6,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,8,10,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,9,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,10,8,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,11,6,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,12,5,6,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,13,9,13,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,14,6,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,15,6,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,16,8,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,17,7,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,18,8,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,19,5,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,20,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,21,6,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,22,7,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,23,8,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,M,MN_09,2,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,24,8,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,1,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,2,0,14,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,3,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,4,0,6,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,5,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,6,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,7,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,8,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,9,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,10,0,7,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,11,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,12,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,13,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,14,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,15,0,4,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,16,0,6,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,17,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,18,0,13,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,19,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,20,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,21,0,12,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,22,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,23,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,FSW,24,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,1,5,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,2,4,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,3,5,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,4,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,5,5,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,6,6,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,7,6,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,8,3,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,9,3,5,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,10,9,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,11,8,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,12,10,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,13,5,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,14,8,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,15,4,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,16,2,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,17,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,18,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,19,5,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,20,2,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,21,7,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,22,3,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,23,5,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_11,2,19/12/2022,20/12/2022,18,Porolithon onkodes fairy dust,24,5,7,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,1,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,2,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,3,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,4,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,5,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,6,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,7,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,8,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,9,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,10,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,11,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,12,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,13,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,14,0,8,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,15,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,16,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,17,0,9,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,18,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,19,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,20,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,21,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,22,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,23,0,10,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,FSW,24,0,11,0,0,No,,No,Self-settlement control.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,1,7,12,0,0,Yes?,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,2,6,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,3,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,4,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,5,8,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,6,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,7,4,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,8,5,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,9,6,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,10,2,5,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,11,5,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,12,3,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,13,8,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,14,1,6,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,15,7,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,16,6,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,17,5,8,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,18,7,9,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,19,3,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,20,4,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,21,3,10,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,22,6,12,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,23,7,11,0,0,No,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Metamorphosis,AS,MN_12,1,19/12/2022,20/12/2022,17,Porolithon onkodes fairy dust,24,7,12,0,0,No,,Yes,NA

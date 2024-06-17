@@ -1,0 +1,44 @@
+year,spawn_date,species,origin,factor,sample_ID,spawn_time,sample_time,assess_time,assess_method,MPS,embryos,eggs,tot,ratio,comments,include_in_model,reason_for_exclusion
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,1,18:40,18:56,21:41,Manual counts,16,1,63,64,0.02,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,2,18:40,19:02,21:40,Manual counts,22,8,46,54,0.15,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,3,18:40,19:09,21:39,Manual counts,29,13,44,57,0.23,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,4,18:40,19:14,21:35,Manual counts,34,22,41,63,0.35,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,5,18:40,19:18,21:34,Manual counts,38,17,42,59,0.29,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,6,18:40,19:24,21:33,Manual counts,44,25,52,77,0.32,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,7,18:40,19:29,21:31,Manual counts,49,34,59,93,0.37,Test run.,No,Test run.
+Nov-22,12/11/2022,Atenuis,Falcon Island north,AS,8,18:40,19:37,21:28,Manual counts,57,31,60,91,0.34,Test run.,No,Test run.
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,1,17:50,18:25,21:24,Manual counts,35,1,11,12,0.08,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,2,17:50,18:30,21:25,Manual counts,40,6,24,30,0.20,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,3,17:50,18:35,21:26,Manual counts,45,10,21,31,0.32,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,4,17:50,18:40,21:32,Manual counts,50,11,27,38,0.29,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,5,17:50,18:48,21:35,Manual counts,58,105,41,146,0.72,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,6,17:50,18:54,21:40,Manual counts,64,355,85,440,0.81,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,7,17:50,19:00,21:45,Manual counts,70,461,115,576,0.80,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,8,17:50,19:07,21:55,Manual counts,77,521,64,585,0.89,,Yes,NA
+Nov-22,13/11/2022,Atenuis,Falcon Island north,AS,9,17:50,19:13,22:10,Manual counts,83,556,134,690,0.81,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,1,22:07,22:17,0:56,Manual counts,10,1,11,12,0.08,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,2,22:07,22:22,0:56,Manual counts,15,0,6,6,0.00,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,3,22:07,22:26,0:57,Manual counts,19,8,8,16,0.50,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,4,22:07,22:31,0:57,Manual counts,24,4,23,27,0.15,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,5,22:07,22:37,0:58,Manual counts,30,7,19,26,0.27,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,6,22:07,22:41,0:59,Manual counts,34,8,44,52,0.15,,Yes,NA
+Dec-22,13/12/2022,Dfavus ,Falcon Island north,AS,7,22:07,22:46,1:00,Manual counts,39,13,46,59,0.22,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,1,20:50,20:57,23:58,Manual counts,7,0,41,41,0.00,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,2,20:50,21:03,0:00,Manual counts,13,0,86,86,0.00,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,3,20:50,21:08,0:02,Manual counts,18,0,135,135,0.00,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,4,20:50,21:11,0:03,Manual counts,21,0,115,115,0.00,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,5,20:50,21:17,0:06,Manual counts,27,0,106,106,0.00,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,6,20:50,21:23,0:08,Manual counts,33,1,123,124,0.01,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,7,20:50,21:28,0:10,Manual counts,38,2,102,104,0.02,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,8,20:50,21:32,0:12,Manual counts,42,2,110,112,0.02,,Yes,NA
+Dec-22,13/12/2022,Melephantotus,SeaSim ex situ rearing,AS,9,20:50,21:41,0:15,Manual counts,51,2,108,110,0.02,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,1,21:30,21:38,1:19,Manual counts,8,0,11,11,0.00,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,2,21:30,21:42,1:21,Manual counts,12,0,93,93,0.00,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,3,21:30,21:55,1:22,Manual counts,25,9,85,94,0.10,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,4,21:30,21:59,1:27,Manual counts,29,9,34,43,0.21,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,5,21:30,22:07,1:43,Manual counts,37,44,65,109,0.40,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,6,21:30,22:12,1:45,Manual counts,42,53,64,117,0.45,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,7,21:30,22:18,1:47,Manual counts,48,61,53,114,0.54,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,8,21:30,22:25,1:49,Manual counts,55,78,47,125,0.62,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,9,21:30,22:31,1:50,Manual counts,61,82,27,109,0.75,,Yes,NA
+Dec-22,14/12/2022,Aloripes,Davies Reef,AS,10,21:30,22:36,1:52,Manual counts,66,77,60,137,0.56,,Yes,NA

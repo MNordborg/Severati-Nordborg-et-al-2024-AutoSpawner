@@ -1,0 +1,457 @@
+year,species,origin,cult_star,no_parents,endpoint,factor,tank,tank_rep,assess_date,larval_age,rep,vol_sampl,vol_conc,vol_subsampl,L_counted,L_total_sampl,density,L_tank_total,comments,use_in_model,reason_for_exclusion
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,14/11/2022,1,1,131,131,131,55,55,0.42,35687,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,14/11/2022,1,2,131,131,131,54,54,0.41,35038,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,14/11/2022,1,3,131,131,131,92,92,0.7,59695,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,15/11/2022,2,1,131,131,131,54,54,0.41,35038,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,15/11/2022,2,2,131,131,131,77,77,0.59,49962,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,15/11/2022,2,3,131,131,131,64,64,0.49,41527,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,16/11/2022,3,1,131,131,131,54,54,0.41,35038,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,16/11/2022,3,2,131,131,131,69,69,0.53,44771,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,16/11/2022,3,3,131,131,131,79,79,0.6,51260,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,17/11/2022,4,1,131,131,131,52,52,0.4,33740,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,17/11/2022,4,2,131,131,131,66,66,0.5,42824,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,17/11/2022,4,3,131,131,131,69,69,0.53,44771,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,1,131,131,131,55,55,0.42,35687,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,1,131,131,131,52,52,0.4,33740,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,2,131,131,131,58,58,0.44,37634,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,2,131,131,131,62,62,0.47,40229,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,3,131,131,131,60,60,0.46,38931,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_02,1,18/11/2022,5,3,131,131,131,55,55,0.42,35687,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,14/11/2022,1,1,131,131,131,85,85,0.65,55153,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,14/11/2022,1,2,131,131,131,80,80,0.61,51908,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,14/11/2022,1,3,131,131,131,83,83,0.63,53855,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,15/11/2022,2,1,131,131,131,88,88,0.67,57099,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,15/11/2022,2,2,131,131,131,65,65,0.5,42176,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,15/11/2022,2,3,131,131,131,63,63,0.48,40878,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,16/11/2022,3,1,131,131,131,71,71,0.54,46069,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,16/11/2022,3,2,131,131,131,63,63,0.48,40878,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,16/11/2022,3,3,131,131,131,81,81,0.62,52557,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,17/11/2022,4,1,131,131,131,75,75,0.57,48664,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,17/11/2022,4,2,131,131,131,98,98,0.75,63588,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,17/11/2022,4,3,131,131,131,105,105,0.8,68130,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,1,131,131,131,64,64,0.49,41527,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,1,131,131,131,63,63,0.48,40878,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,2,131,131,131,69,69,0.53,44771,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,2,131,131,131,62,62,0.47,40229,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,3,131,131,131,72,72,0.55,46718,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,AS,MN_04,2,18/11/2022,5,3,131,131,131,73,73,0.56,47366,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,14/11/2022,1,1,131,131,131,62,62,0.47,40229,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,14/11/2022,1,2,131,131,131,70,70,0.53,45420,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,14/11/2022,1,3,131,131,131,76,76,0.58,49313,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,15/11/2022,2,1,131,131,131,87,87,0.66,56450,3000 larvae removed by student from a different team,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,15/11/2022,2,2,131,131,131,90,90,0.69,58397,3000 larvae removed by student from a different team,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,15/11/2022,2,3,131,131,131,109,109,0.83,70725,3000 larvae removed by student from a different team,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,16/11/2022,3,1,131,131,131,101,101,0.77,65534,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,16/11/2022,3,2,131,131,131,70,70,0.53,45420,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,16/11/2022,3,3,131,131,131,80,80,0.61,51908,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,17/11/2022,4,1,131,131,131,69,69,0.53,44771,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,17/11/2022,4,2,131,131,131,78,78,0.6,50611,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,17/11/2022,4,3,131,131,131,74,74,0.56,48015,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,1,131,131,131,60,60,0.46,38931,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,1,131,131,131,49,49,0.37,31794,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,2,131,131,131,62,62,0.47,40229,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,2,131,131,131,69,69,0.53,44771,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,3,131,131,131,56,56,0.43,36336,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_06,1,18/11/2022,5,3,131,131,131,56,56,0.43,36336,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,14/11/2022,1,1,131,131,131,76,76,0.58,49313,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,14/11/2022,1,2,131,131,131,88,88,0.67,57099,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,14/11/2022,1,3,131,131,131,68,68,0.52,44122,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,15/11/2022,2,1,131,131,131,79,79,0.6,51260,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,15/11/2022,2,2,131,131,131,81,81,0.62,52557,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,15/11/2022,2,3,131,131,131,84,84,0.64,54504,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,16/11/2022,3,1,131,131,131,92,92,0.7,59695,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,16/11/2022,3,2,131,131,131,159,159,1.21,103168,,No,Approximately double the density of any other counted replicate.
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,16/11/2022,3,3,131,131,131,97,97,0.74,62939,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,17/11/2022,4,1,131,131,131,79,79,0.6,51260,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,17/11/2022,4,2,131,131,131,107,107,0.82,69427,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,17/11/2022,4,3,131,131,131,83,83,0.63,53855,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,1,131,131,131,80,80,0.61,51908,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,1,131,131,131,76,76,0.58,49313,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,2,131,131,131,89,89,0.68,57748,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,2,131,131,131,74,74,0.56,48015,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,3,131,131,131,82,82,0.63,53206,,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Larval survival,M,MN_08,2,18/11/2022,5,3,131,131,131,79,79,0.6,51260,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,1,500,40,3,11,147,0.29,24933,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,2,500,40,3,25,333,0.67,56667,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,3,500,40,3,21,280,0.56,47600,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,4,500,40,3,23,307,0.61,52133,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,5,500,40,3,23,307,0.61,52133,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,13/12/2022,1,6,500,40,3,18,240,0.48,40800,Already swimming larvae! Some weird and broken larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,1,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,2,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,3,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,4,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,5,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,14/12/2022,2,6,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,1,500,30,3,44,440,0.88,74800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,2,500,30,3,36,360,0.72,61200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,3,500,30,3,10,100,0.2,17000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,4,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,5,500,30,3,29,290,0.58,49300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,15/12/2022,3,6,500,30,3,37,370,0.74,62900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,1,500,40,3,39,520,1.04,88400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,2,500,40,3,17,227,0.45,38533,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,3,500,40,3,15,200,0.4,34000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,4,500,40,3,17,227,0.45,38533,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,5,500,40,3,19,253,0.51,43067,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,16/12/2022,4,6,500,40,3,21,280,0.56,47600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,1,500,30,3,26,260,0.52,44200,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,2,500,30,3,21,210,0.42,35700,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,3,500,30,3,19,190,0.38,32300,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,4,500,30,3,16,160,0.32,27200,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,5,500,30,3,21,210,0.42,35700,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_05,1,17/12/2022,5,6,500,30,3,31,310,0.62,52700,Larvae look great.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,1,500,30,3,22,220,0.44,37400,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,2,500,30,3,14,140,0.28,23800,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,3,500,30,3,10,100,0.2,17000,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,4,500,30,3,13,130,0.26,22100,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,5,500,30,3,16,160,0.32,27200,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,13/12/2022,1,6,500,30,3,17,170,0.34,28900,"Larvae already swimming! Weird, broken and dead larvae observed.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,1,500,40,3,15,200,0.4,34000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,2,500,40,3,13,173,0.35,29467,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,3,500,40,3,18,240,0.48,40800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,4,500,40,3,21,280,0.56,47600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,5,500,40,3,13,173,0.35,29467,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,14/12/2022,2,6,500,40,3,12,160,0.32,27200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,1,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,2,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,3,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,4,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,5,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,15/12/2022,3,6,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,1,500,30,3,33,330,0.66,56100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,2,500,30,3,29,290,0.58,49300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,3,500,30,3,20,200,0.4,34000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,4,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,5,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,16/12/2022,4,6,500,30,3,13,130,0.26,22100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,1,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,2,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,3,500,30,3,10,100,0.2,17000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,4,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,5,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,M,MN_08,2,17/12/2022,5,6,500,30,3,15,150,0.3,25500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,1,500,50,3,7,117,0.23,19833,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,2,500,50,3,6,100,0.2,17000,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,3,500,50,3,12,200,0.4,34000,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,4,500,50,3,9,150,0.3,25500,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,5,500,50,3,14,233,0.47,39667,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,13/12/2022,1,6,500,50,3,9,150,0.3,25500,Lots of weird/broken larvae. Already swimming!,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,1,500,30,3,17,170,0.34,28900,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,2,500,30,3,13,130,0.26,22100,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,3,500,30,3,20,200,0.4,34000,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,4,500,30,3,26,260,0.52,44200,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,5,500,30,3,15,150,0.3,25500,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,14/12/2022,2,6,500,30,3,19,190,0.38,32300,Some chimaeras/clusters.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,1,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,2,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,3,500,30,3,29,290,0.58,49300,"Chimaeras, individual larvae in chimaera counted where possible.",No,Attempted to count individual larvae in chimaeras.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,4,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,5,500,30,3,32,320,0.64,54400,"Chimaeras, individual larvae in chimaera counted where possible.",No,Attempted to count individual larvae in chimaeras.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,15/12/2022,3,6,500,30,3,35,350,0.7,59500,"Chimaeras, individual larvae in chimaera counted where possible.",No,Attempted to count individual larvae in chimaeras.
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,1,500,30,3,15,150,0.3,25500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,2,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,3,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,4,500,30,3,23,230,0.46,39100,"Chimaera present, individuals not counted.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,5,500,30,3,10,100,0.2,17000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,16/12/2022,4,6,500,30,3,15,150,0.3,25500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,1,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,2,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,3,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,4,500,30,3,14,140,0.28,23800,"Chimaera present, individuals not counted.",Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,5,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_07,1,17/12/2022,5,6,500,30,3,14,140,0.28,23800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,1,500,40,3,17,227,0.45,38533,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,2,500,40,3,14,187,0.37,31733,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,3,500,40,3,11,147,0.29,24933,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,4,500,40,3,11,147,0.29,24933,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,5,500,40,3,13,173,0.35,29467,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,13/12/2022,1,6,500,40,3,11,147,0.29,24933,Swimming! Some broken/weird larvae.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,1,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,2,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,3,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,4,500,30,3,15,150,0.3,25500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,5,500,30,3,25,250,0.5,42500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,14/12/2022,2,6,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,1,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,2,500,30,3,20,200,0.4,34000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,3,500,30,3,12,120,0.24,20400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,4,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,5,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,15/12/2022,3,6,500,30,3,12,120,0.24,20400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,1,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,2,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,3,500,30,3,12,120,0.24,20400,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,4,500,30,3,25,250,0.5,42500,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,5,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,16/12/2022,4,6,500,30,3,14,140,0.28,23800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,1,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,2,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,3,500,30,3,10,100,0.2,17000,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,4,500,30,3,11,110,0.22,18700,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,5,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Larval survival,AS,MN_10,2,17/12/2022,5,6,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,1,500,30,3,36,360,0.72,61200,"Swimming! Broken, dying and weird larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,2,500,30,3,31,310,0.62,52700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,3,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,4,500,30,3,38,380,0.76,64600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,5,500,30,3,29,290,0.58,49300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,14/12/2022,1,6,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,1,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,2,500,30,3,57,570,1.14,96900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,3,500,30,3,58,580,1.16,98600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,4,500,30,3,55,550,1.1,93500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,5,500,30,3,37,370,0.74,62900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,15/12/2022,2,6,500,30,3,66,660,1.32,112200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,1,500,35,3,35,408,0.82,69417,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,2,500,35,3,27,315,0.63,53550,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,3,500,35,3,49,572,1.14,97183,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,4,500,35,3,25,292,0.58,49583,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,5,500,35,3,40,467,0.93,79333,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,16/12/2022,3,6,500,35,3,45,525,1.05,89250,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,1,500,30,3,52,520,1.04,88400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,2,500,30,3,55,550,1.1,93500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,3,500,30,3,43,430,0.86,73100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,4,500,30,3,51,510,1.02,86700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,5,500,30,3,38,380,0.76,64600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,17/12/2022,4,6,500,30,3,49,490,0.98,83300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,1,500,30,3,84,840,1.68,142800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,2,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,3,500,30,3,50,500,1,85000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,4,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,5,500,30,3,44,440,0.88,74800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,18/12/2022,5,6,500,30,3,42,420,0.84,71400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,1,500,30,5,77,462,0.92,78540,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,2,500,30,5,80,480,0.96,81600,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,3,500,30,5,84,504,1.01,85680,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,4,500,30,5,81,486,0.97,82620,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,5,500,30,5,77,462,0.92,78540,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_02,1,19/12/2022,6,6,500,30,5,47,282,0.56,47940,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,1,500,40,3,27,360,0.72,61200,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,2,500,40,3,17,227,0.45,38533,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,3,500,40,3,14,187,0.37,31733,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,4,500,40,3,25,333,0.67,56667,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,5,500,40,3,24,320,0.64,54400,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,14/12/2022,1,6,500,40,3,20,267,0.53,45333,Swimming! Broken and dying larvae observed.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,1,500,30,3,53,530,1.06,90100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,2,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,3,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,4,500,30,3,31,310,0.62,52700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,5,500,30,3,47,470,0.94,79900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,15/12/2022,2,6,500,30,3,28,280,0.56,47600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,1,500,45,3,28,420,0.84,71400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,2,500,45,3,24,360,0.72,61200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,3,500,45,3,38,570,1.14,96900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,4,500,45,3,24,360,0.72,61200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,5,500,45,3,26,390,0.78,66300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,16/12/2022,3,6,500,45,3,23,345,0.69,58650,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,1,500,45,3,19,285,0.57,48450,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,2,500,45,3,25,375,0.75,63750,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,3,500,45,3,33,495,0.99,84150,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,4,500,45,3,30,450,0.9,76500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,5,500,45,3,28,420,0.84,71400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,17/12/2022,4,6,500,45,3,36,540,1.08,91800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,1,500,30,3,49,490,0.98,83300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,2,500,30,3,49,490,0.98,83300,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,3,500,30,3,52,520,1.04,88400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,4,500,30,3,33,330,0.66,56100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,5,500,30,3,44,440,0.88,74800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,18/12/2022,5,6,500,30,3,46,460,0.92,78200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,1,500,30,5,94,564,1.13,95880,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,2,500,30,5,57,342,0.68,58140,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,3,500,30,5,72,432,0.86,73440,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,4,500,30,5,68,408,0.82,69360,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,5,500,30,5,72,432,0.86,73440,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,M,MN_03,2,19/12/2022,6,6,500,30,5,67,402,0.8,68340,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,1,500,30,3,23,230,0.46,39100,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,2,500,30,3,23,230,0.46,39100,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,3,500,30,3,32,320,0.64,54400,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,4,500,30,3,28,280,0.56,47600,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,5,500,30,3,24,240,0.48,40800,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,14/12/2022,1,6,500,30,3,30,300,0.6,51000,"Swimming! Broken, weird and dying larvae observed.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,1,500,30,3,33,330,0.66,56100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,2,500,30,3,43,430,0.86,73100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,3,500,30,3,50,500,1,85000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,4,500,30,3,34,340,0.68,57800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,5,500,30,3,33,330,0.66,56100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,15/12/2022,2,6,500,30,3,36,360,0.72,61200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,1,500,30,3,27,270,0.54,45900,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,2,500,30,3,33,330,0.66,56100,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,3,500,30,3,25,250,0.5,42500,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,4,500,30,3,38,380,0.76,64600,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,5,500,30,3,31,310,0.62,52700,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,16/12/2022,3,6,500,30,3,24,240,0.48,40800,Some small to tiny larvae.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,1,500,30,3,36,360,0.72,61200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,2,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,3,500,30,3,30,300,0.6,51000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,4,500,30,3,37,370,0.74,62900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,5,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,17/12/2022,4,6,500,30,3,33,330,0.66,56100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,1,500,30,3,30,300,0.6,51000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,2,500,30,3,35,350,0.7,59500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,3,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,4,500,30,3,34,340,0.68,57800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,5,500,30,3,32,320,0.64,54400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,18/12/2022,5,6,500,30,3,38,380,0.76,64600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,1,500,30,5,84,504,1.01,85680,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,2,500,30,5,38,228,0.46,38760,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,3,500,30,5,37,222,0.44,37740,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,4,500,30,5,55,330,0.66,56100,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,5,500,30,5,32,192,0.38,32640,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_04,1,19/12/2022,6,6,500,30,5,25,150,0.3,25500,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,1,500,30,3,20,200,0.4,34000,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,2,500,30,3,15,150,0.3,25500,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,3,500,30,3,15,150,0.3,25500,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,4,500,30,3,10,100,0.2,17000,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,5,500,30,3,22,220,0.44,37400,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,14/12/2022,1,6,500,30,3,14,140,0.28,23800,"Swimming already! Some broken, weird and dying larvae.",Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,1,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,2,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,3,500,30,3,24,240,0.48,40800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,4,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,5,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,15/12/2022,2,6,500,30,3,30,300,0.6,51000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,1,500,40,3,16,213,0.43,36267,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,2,500,40,3,14,187,0.37,31733,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,3,500,40,3,14,187,0.37,31733,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,4,500,40,3,18,240,0.48,40800,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,5,500,40,3,20,267,0.53,45333,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,16/12/2022,3,6,500,40,3,23,307,0.61,52133,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,1,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,2,500,30,3,25,250,0.5,42500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,3,500,30,3,25,250,0.5,42500,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,4,500,30,3,30,300,0.6,51000,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,5,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,17/12/2022,4,6,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,1,500,35,3,20,233,0.47,39667,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,2,500,35,3,35,408,0.82,69417,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,3,500,35,3,18,210,0.42,35700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,4,500,35,3,14,163,0.33,27767,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,5,500,35,3,18,210,0.42,35700,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,18/12/2022,5,6,500,35,3,22,257,0.51,43633,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,1,500,30,5,35,210,0.42,35700,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,2,500,30,5,33,198,0.4,33660,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,3,500,30,5,17,102,0.2,17340,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,4,500,30,5,29,174,0.35,29580,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,5,500,30,5,34,204,0.41,34680,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Larval survival,AS,MN_01,2,19/12/2022,6,6,500,30,5,30,180,0.36,30600,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,1,500,30,3,21,210,0.42,35700,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,2,500,30,3,20,200,0.4,34000,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,3,500,30,3,38,380,0.76,64600,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,4,500,30,3,19,190,0.38,32300,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,5,500,30,3,29,290,0.58,49300,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,15/12/2022,1,6,500,30,3,40,400,0.8,68000,"Larvae potentially more variable in size than AutoSpawner cultures. Weird, broken and dying embryos present.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,1,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,2,500,30,3,28,280,0.56,47600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,3,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,4,500,30,3,28,280,0.56,47600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,5,500,30,3,32,320,0.64,54400,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,16/12/2022,2,6,500,30,3,NA,NA,NA,NA,,No,Data not available.
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,1,500,30,3,11,110,0.22,18700,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,2,500,30,3,16,160,0.32,27200,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,3,500,30,3,12,120,0.24,20400,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,4,500,30,3,7,70,0.14,11900,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,5,500,30,3,15,150,0.3,25500,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,17/12/2022,3,6,500,30,3,14,140,0.28,23800,Broken and dying larvae visible.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,1,500,30,3,16,160,0.32,27200,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,2,500,30,3,6,60,0.12,10200,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,3,500,30,3,7,70,0.14,11900,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,4,500,30,3,6,60,0.12,10200,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,5,500,30,3,10,100,0.2,17000,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,18/12/2022,4,6,500,30,3,11,110,0.22,18700,Weird and broken larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,1,500,30,5,2,12,0.02,2040,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,2,500,30,5,5,30,0.06,5100,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,3,500,30,5,7,42,0.08,7140,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,4,500,30,5,10,60,0.12,10200,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,5,500,30,5,8,48,0.1,8160,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_06,1,19/12/2022,5,6,500,30,5,4,24,0.05,4080,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,1,500,30,3,19,190,0.38,32300,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,2,500,30,3,26,260,0.52,44200,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,3,500,30,3,30,300,0.6,51000,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,4,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,5,500,30,3,44,440,0.88,74800,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,15/12/2022,1,6,500,30,3,29,290,0.58,49300,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,1,500,30,3,23,230,0.46,39100,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,2,500,30,3,13,130,0.26,22100,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,3,500,30,3,12,120,0.24,20400,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,4,500,30,3,18,180,0.36,30600,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,5,500,30,3,26,260,0.52,44200,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,16/12/2022,2,6,500,30,3,22,220,0.44,37400,Some weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,1,500,30,3,23,230,0.46,39100,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,2,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,3,500,30,3,17,170,0.34,28900,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,4,500,30,3,16,160,0.32,27200,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,5,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,17/12/2022,3,6,500,30,3,14,140,0.28,23800,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,1,500,30,3,13,130,0.26,22100,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,2,500,30,3,15,150,0.3,25500,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,3,500,30,3,14,140,0.28,23800,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,4,500,30,3,11,110,0.22,18700,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,5,500,30,3,13,130,0.26,22100,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,18/12/2022,4,6,500,30,3,19,190,0.38,32300,Broken and weird larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,1,500,30,5,18,108,0.22,18360,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,2,500,30,5,12,72,0.14,12240,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,3,500,30,5,14,84,0.17,14280,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,4,500,30,5,12,72,0.14,12240,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,5,500,30,5,9,54,0.11,9180,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,M,MN_09,2,19/12/2022,5,6,500,30,5,10,60,0.12,10200,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,1,500,35,3,31,362,0.72,61483,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,2,500,35,3,21,245,0.49,41650,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,3,500,35,3,26,303,0.61,51567,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,4,500,35,3,17,198,0.4,33717,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,5,500,35,3,17,198,0.4,33717,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,15/12/2022,1,6,500,35,3,20,233,0.47,39667,"Broken, weird and dying embryos.",Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,1,500,35,3,14,163,0.33,27767,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,2,500,35,3,20,233,0.47,39667,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,3,500,35,3,25,292,0.58,49583,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,4,500,35,3,27,315,0.63,53550,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,5,500,35,3,17,198,0.4,33717,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,16/12/2022,2,6,500,35,3,21,245,0.49,41650,Some weird and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,1,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,2,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,3,500,30,3,22,220,0.44,37400,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,4,500,30,3,15,150,0.3,25500,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,5,500,30,3,16,160,0.32,27200,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,17/12/2022,3,6,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,1,500,30,3,22,220,0.44,37400,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,2,500,30,3,6,60,0.12,10200,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,3,500,30,3,8,80,0.16,13600,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,4,500,30,3,8,80,0.16,13600,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,5,500,30,3,13,130,0.26,22100,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,18/12/2022,4,6,500,30,3,16,160,0.32,27200,Best looking larvae across the four Alor culture tanks on this date.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,1,500,30,5,10,60,0.12,10200,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,2,500,30,5,17,102,0.2,17340,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,3,500,30,5,10,60,0.12,10200,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,4,500,30,5,10,60,0.12,10200,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,5,500,30,5,17,102,0.2,17340,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_12,1,19/12/2022,5,6,500,30,5,6,36,0.07,6120,Mostly ok looking larvae. All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,1,500,35,3,30,350,0.7,59500,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,2,500,35,3,32,373,0.75,63467,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,3,500,35,3,29,338,0.68,57517,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,4,500,35,3,34,397,0.79,67433,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,5,500,35,3,23,268,0.54,45617,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,15/12/2022,1,6,500,35,3,25,292,0.58,49583,Broken and dying embryos.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,1,500,35,3,23,268,0.54,45617,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,2,500,35,3,19,222,0.44,37683,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,3,500,35,3,20,233,0.47,39667,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,4,500,35,3,20,233,0.47,39667,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,5,500,35,3,24,280,0.56,47600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,16/12/2022,2,6,500,35,3,30,350,0.7,59500,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,1,500,30,3,12,120,0.24,20400,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,2,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,3,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,4,500,30,3,18,180,0.36,30600,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,5,500,30,3,16,160,0.32,27200,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,17/12/2022,3,6,500,30,3,21,210,0.42,35700,,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,1,500,30,3,14,140,0.28,23800,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,2,500,30,3,17,170,0.34,28900,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,3,500,30,3,14,140,0.28,23800,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,4,500,30,3,13,130,0.26,22100,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,5,500,30,3,17,170,0.34,28900,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,18/12/2022,4,6,500,30,3,19,190,0.38,32300,Broken and dying larvae.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,1,500,30,5,11,66,0.13,11220,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,2,500,30,5,6,36,0.07,6120,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,3,500,30,5,3,18,0.04,3060,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,4,500,30,5,5,30,0.06,5100,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,5,500,30,5,8,48,0.1,8160,All larvae in sample counted across the 6 reps.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Larval survival,AS,MN_11,2,19/12/2022,5,6,500,30,5,7,42,0.08,7140,All larvae in sample counted across the 6 reps.,Yes,NA

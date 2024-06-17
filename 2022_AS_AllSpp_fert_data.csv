@@ -1,0 +1,85 @@
+year,species,origin,cult_start,no_parents,endpoint,factor,sample_time,assess_time,rep,suc,unfert,count_method,comments,use_in_model,reason_for_exclusion
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:00,1,115,5,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:02,2,111,1,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:05,3,92,3,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:10,4,107,0,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:14,5,109,1,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:20,6,86,1,Photo,,No,Photo counts
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:26,1,131,6,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:28,2,119,14,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:31,3,127,5,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:33,4,128,21,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:34,5,117,5,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,AS,19:20,22:36,6,134,17,Microscope,Samples collected at end of Fertilisation mode,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:42,1,131,20,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:46,2,115,10,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:50,3,107,22,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:53,4,109,9,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:54,5,127,14,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Nov-22,Atenuis,Falcon Island north (Palm islands),13/11/2022,9,Fertilisation,M,20:25,22:56,6,95,16,Microscope,Overall appears to have more broken embryos than AutoSpawner samples,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,1,84,59,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,2,79,84,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,3,94,76,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,4,82,77,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,5,66,69,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,M,23:59,0:30,6,80,69,Microscope,Relatively low fert rate. Some embryos broken.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,1,32,38,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,2,24,37,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,3,29,26,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,4,21,22,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,5,36,30,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Dfavus,Falcon Island north (Palm islands),12/12/2022,5,Fertilisation,AS,23:30,0:20,6,43,34,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,1,23,14,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,2,41,23,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,3,40,22,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,4,48,29,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,5,57,43,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:15,6,46,31,Microscope,Some broken embryos.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,1,19,14,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,2,18,19,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,3,28,18,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,4,25,18,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,5,13,9,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,M,22:31,23:45,6,14,11,Microscope,Some broken embryos. Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:40,1,49,62,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:44,2,43,62,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:45,3,47,82,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:47,4,37,74,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:48,5,43,68,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,23:54,6,53,60,Microscope,,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:21,1,68,52,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:24,2,69,49,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:27,3,66,63,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:30,4,56,62,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:33,5,63,58,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,0:36,6,72,53,Microscope,Duplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:21,1,75,86,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:23,2,65,74,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:25,3,59,71,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:26,4,74,74,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:28,5,72,74,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Melephantotus,SeaSim ex situ rearing,13/12/2022,9,Fertilisation,AS,21:37,1:30,6,63,87,Microscope,Triplicate counts.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,1,69,0,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,2,81,4,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,3,57,2,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,4,77,1,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,5,64,0,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,M,23:40,0:40,6,70,0,Microscope,Some broken embryos. ,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:07,1,101,14,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:10,2,100,6,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:12,3,125,4,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:14,4,95,8,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:16,5,109,12,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,1:18,6,116,7,Microscope,Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,1:54,1,101,10,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,1:55,2,92,9,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,1:57,3,102,8,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,1:58,4,115,10,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,1:59,5,99,16,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,23:20,2:01,6,90,14,Microscope,End of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:14,1,190,8,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:16,2,119,2,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:18,3,112,3,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:19,4,113,8,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:20,5,109,4,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
+Dec-22,Aloripes,Davies Reef,14/12/2022,10,Fertilisation,AS,22:49,2:22,6,126,6,Microscope,Duplicate counts. Start of fertilisation.,Yes,NA
